@@ -7,6 +7,9 @@ using UnityEngine.InputSystem;
 public class PlayerScript : MonoBehaviour
 {
     
+    // 
+    //  Animator state
+    // 
     private string _animatorBool_walk = "walk";
     private string _animatorTrig_punch = "punch01";
     private string _animatorTrig_kick = "kick01";
@@ -14,14 +17,25 @@ public class PlayerScript : MonoBehaviour
     private string _animationState_Walking = "Walking";
     private string _animationTag_Attacking = "Attack";
 
+    // 
+    //  Public variable
+    // 
+    public Vector2 WalkSpeed;
+
+
+    // 
+    //  Private variable
+    // 
+    
+    // Component
     private Animator _animator;
     private PlayerInput _playerInput;
     private SpriteRenderer _renderer;
 
+    // state
+    private Vector2 walkDirection;
     private bool isWalk;
 
-    private Vector2 walkDirection;
-    public Vector2 WalkSpeed;
 
     private void Awake()
     {
@@ -39,7 +53,6 @@ public class PlayerScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log( "State "  + _animator.GetCurrentAnimatorStateInfo(0) );
         if ( _animator.GetCurrentAnimatorStateInfo(0).IsTag("Attack"))
         {
             

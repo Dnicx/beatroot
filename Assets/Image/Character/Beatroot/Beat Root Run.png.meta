@@ -122,7 +122,7 @@ TextureImporter:
       name: Beat Root Run_0
       rect:
         serializedVersion: 2
-        x: 1
+        x: 0
         y: 0
         width: 307
         height: 442
@@ -143,9 +143,9 @@ TextureImporter:
       name: Beat Root Run_1
       rect:
         serializedVersion: 2
-        x: 344
+        x: 307
         y: 0
-        width: 253
+        width: 307
         height: 442
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -154,7 +154,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cbc094e6d2a4f44488c0dce97470c518
+      spriteID: ed6163da40466734994d55acb92a0a0d
       internalID: 2020270118
       vertices: []
       indices: 
@@ -164,10 +164,10 @@ TextureImporter:
       name: Beat Root Run_2
       rect:
         serializedVersion: 2
-        x: 653
-        y: 1
-        width: 223
-        height: 440
+        x: 614
+        y: 0
+        width: 307
+        height: 442
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -175,7 +175,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f5cf3a26d401ed8479cb4a52f2d6fa94
+      spriteID: 61ae2dd392a482f40bb54c50cb7edc6e
       internalID: -989516174
       vertices: []
       indices: 
@@ -185,10 +185,10 @@ TextureImporter:
       name: Beat Root Run_3
       rect:
         serializedVersion: 2
-        x: 963
-        y: 1
-        width: 225
-        height: 437
+        x: 921
+        y: 0
+        width: 307
+        height: 442
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -196,7 +196,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3c679c15c6290b44d94e51b6fff68e2a
+      spriteID: 781f40d54db09e04e895bd77d3662970
       internalID: 774633109
       vertices: []
       indices: 
@@ -206,10 +206,10 @@ TextureImporter:
       name: Beat Root Run_4
       rect:
         serializedVersion: 2
-        x: 1269
-        y: 16
-        width: 229
-        height: 421
+        x: 1228
+        y: 0
+        width: 307
+        height: 442
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -217,7 +217,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 67e0a170cd3aceb4fbbef734a207fa58
+      spriteID: ccb295475abc295488745b4adb7a0553
       internalID: 284705771
       vertices: []
       indices: 
@@ -227,10 +227,10 @@ TextureImporter:
       name: Beat Root Run_5
       rect:
         serializedVersion: 2
-        x: 1564
-        y: 37
-        width: 263
-        height: 398
+        x: 1535
+        y: 0
+        width: 307
+        height: 442
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -238,7 +238,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d14b72f73bd60864aabddd276eba04fc
+      spriteID: d35b69edb92782843a3a77573de9c988
       internalID: -511206738
       vertices: []
       indices: 
@@ -248,10 +248,10 @@ TextureImporter:
       name: Beat Root Run_6
       rect:
         serializedVersion: 2
-        x: 1884
-        y: 16
-        width: 227
-        height: 421
+        x: 1842
+        y: 0
+        width: 307
+        height: 442
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -259,7 +259,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 96c1017b3dc12db4cadc1107366c2792
+      spriteID: ddea6e5b25f4a7941969364f01627de7
       internalID: -516734439
       vertices: []
       indices: 
@@ -269,10 +269,10 @@ TextureImporter:
       name: Beat Root Run_7
       rect:
         serializedVersion: 2
-        x: 2191
-        y: 1
-        width: 225
-        height: 437
+        x: 2149
+        y: 0
+        width: 307
+        height: 442
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -280,7 +280,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 85b7e52600997c943911685185c9d1eb
+      spriteID: cabde7a59b5aeaa47af214549849203b
       internalID: 357673175
       vertices: []
       indices: 
@@ -290,10 +290,10 @@ TextureImporter:
       name: Beat Root Run_8
       rect:
         serializedVersion: 2
-        x: 2495
-        y: 1
-        width: 225
-        height: 439
+        x: 2456
+        y: 0
+        width: 307
+        height: 442
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -301,7 +301,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 191db7f8fa40c8747b4b014e23e78066
+      spriteID: 8f20563ed20b9c34b9e2242d39c065dd
       internalID: -1453305621
       vertices: []
       indices: 
@@ -311,10 +311,10 @@ TextureImporter:
       name: Beat Root Run_9
       rect:
         serializedVersion: 2
-        x: 2799
-        y: 11
-        width: 254
-        height: 430
+        x: 2763
+        y: 0
+        width: 307
+        height: 442
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -322,7 +322,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a2232fd99e1bc9c4ea2c48ab78ab15ae
+      spriteID: 486d0dcf31219b84581f30333ae48621
       internalID: 118675178
       vertices: []
       indices: 
