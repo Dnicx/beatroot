@@ -3,8 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
+
 public class PlayerScript : MonoBehaviour
 {
+    
+    private string _animatorBool_walk = "walk";
+    private string _animatorTrig_punch = "punch01";
+    private string _animatorTrig_kick = "kick01";
+    
+    private string _animationState_Walking = "Walking";
+    private string _animationTag_Attacking = "Attack";
 
     private Animator _animator;
     private PlayerInput _playerInput;
@@ -31,7 +39,14 @@ public class PlayerScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Translate( walkDirection.x * WalkSpeed.x * Time.deltaTime, 0, walkDirection.y * WalkSpeed.y * Time.deltaTime );
+        Debug.Log( "State "  + _animator.GetCurrentAnimatorStateInfo(0) );
+        if ( _animator.GetCurrentAnimatorStateInfo(0).IsTag("Attack"))
+        {
+            
+        }
+        else {
+            transform.Translate( walkDirection.x * WalkSpeed.x * Time.deltaTime, 0, walkDirection.y * WalkSpeed.y * Time.deltaTime );
+        }
     }
 
     public void walk( InputAction.CallbackContext context )
@@ -40,12 +55,12 @@ public class PlayerScript : MonoBehaviour
         Debug.Log( "walk" );
         if ( context.performed ){
             Debug.Log( "yes walk" );
-            _animator.SetBool( "walk", true );
+            _animator.SetBool( _animatorBool_walk, true );
 
         }
 
         if ( context.canceled ){
-             _animator.SetBool( "walk", false );
+             _animator.SetBool( _animatorBool_walk, false );
         }
 
         walkDirection = context.ReadValue<Vector2>();
@@ -54,6 +69,28 @@ public class PlayerScript : MonoBehaviour
         }
         if( walkDirection.x > 0 ){
             _renderer.flipX = false;
+        }
+
+    }
+
+    public void punch( InputAction.CallbackContext context )
+    {
+
+         if ( context.performed ){
+            Debug.Log( "Boom!" );
+            _animator.SetTrigger( _animatorTrig_punch );
+
+        }
+
+    }
+
+    public void kick( InputAction.CallbackContext context )
+    {
+
+         if ( context.performed ){
+            Debug.Log( "Boom!" );
+            _animator.SetTrigger( _animatorTrig_kick );
+
         }
 
     }
