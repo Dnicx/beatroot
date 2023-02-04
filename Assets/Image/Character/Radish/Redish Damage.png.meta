@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 856818cbf645f96469a71db256ebc2b4
+guid: ed035a7f69eae4143b733cd5b7151a9b
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -119,190 +119,148 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Beat Root Idle_0
+      name: Redish Damage_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 225
-        height: 441
+        width: 340
+        height: 710
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 39b6e51fc9b701f47934ef88048114f2
-      internalID: 1853867864
+      spriteID: 7a0a38f4f47258046aa596a2e89f5a7e
+      internalID: -386950636
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Beat Root Idle_1
+      name: Redish Damage_1
       rect:
         serializedVersion: 2
-        x: 225
+        x: 340
         y: 0
-        width: 225
-        height: 441
+        width: 340
+        height: 710
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 01c12f7fd0c477b408bb63675725f247
-      internalID: -675050736
+      spriteID: b32ac3c35fb2e3744ac7398f10401bba
+      internalID: -375061137
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Beat Root Idle_2
+      name: Redish Damage_2
       rect:
         serializedVersion: 2
-        x: 450
+        x: 680
         y: 0
-        width: 225
-        height: 441
+        width: 340
+        height: 710
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 62c7c92c00d08224da17f147fd28226c
-      internalID: -1472668640
+      spriteID: 2c0d59e51c7850a47ba6fe4f7dd87bd7
+      internalID: 946861727
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Beat Root Idle_3
+      name: Redish Damage_3
       rect:
         serializedVersion: 2
-        x: 675
+        x: 1020
         y: 0
-        width: 225
-        height: 441
+        width: 340
+        height: 710
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7457a1f4fc5a44f42b45578b00d0a20b
-      internalID: 502399486
+      spriteID: 0e40608d10b16304d9eb7117d0d2a07d
+      internalID: 188474685
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Beat Root Idle_4
+      name: Redish Damage_4
       rect:
         serializedVersion: 2
-        x: 900
+        x: 1360
         y: 0
-        width: 225
-        height: 441
+        width: 340
+        height: 710
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2a5fd96e1e3573b48908a31fa5b47672
-      internalID: 84480897
+      spriteID: 3dc8140b1f5fd27409fa8944e0f391b9
+      internalID: -66952184
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Beat Root Idle_5
+      name: Redish Damage_5
       rect:
         serializedVersion: 2
-        x: 1125
+        x: 1700
         y: 0
-        width: 225
-        height: 441
+        width: 340
+        height: 710
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4fc4334c6c2e5a747a0cc9ce39e7635b
-      internalID: 1481619690
+      spriteID: db6fd33b6ea4edf4dad782606b00c86c
+      internalID: 1202967024
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Beat Root Idle_6
+      name: Redish Damage_6
       rect:
         serializedVersion: 2
-        x: 1350
+        x: 2040
         y: 0
-        width: 225
-        height: 441
+        width: 340
+        height: 710
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d41ecb90115821c4ebcf8bb6ef0c03a8
-      internalID: -833429360
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Beat Root Idle_7
-      rect:
-        serializedVersion: 2
-        x: 1575
-        y: 0
-        width: 225
-        height: 441
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1e3c11bc0542fc9429e06a74889eb35b
-      internalID: 1179157511
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Beat Root Idle_8
-      rect:
-        serializedVersion: 2
-        x: 1800
-        y: 0
-        width: 225
-        height: 441
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7834b67f49ff02a4ab801696d3dba8bd
-      internalID: 761847768
+      spriteID: e3d9dff39adbc364e884e4d9b7984a2b
+      internalID: 1397019922
       vertices: []
       indices: 
       edges: []
@@ -318,15 +276,13 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Beat Root Idle_8: 761847768
-      Beat Root Idle_4: 84480897
-      Beat Root Idle_7: 1179157511
-      Beat Root Idle_5: 1481619690
-      Beat Root Idle_2: -1472668640
-      Beat Root Idle_0: 1853867864
-      Beat Root Idle_3: 502399486
-      Beat Root Idle_6: -833429360
-      Beat Root Idle_1: -675050736
+      Redish Damage_6: 1397019922
+      Redish Damage_1: -375061137
+      Redish Damage_5: 1202967024
+      Redish Damage_4: -66952184
+      Redish Damage_2: 946861727
+      Redish Damage_3: 188474685
+      Redish Damage_0: -386950636
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
