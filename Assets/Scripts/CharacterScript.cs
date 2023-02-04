@@ -33,8 +33,7 @@ public class CharacterScript : Entity
     protected Animator _animator;
     protected SpriteRenderer _renderer;
     protected CharacterController _controller;
-
-    public AudioSource audioSrc;
+    protected AudioSource _audioSrc;
 
     // TODO: add sound player
 
@@ -49,6 +48,7 @@ public class CharacterScript : Entity
         _animator = GetComponent<Animator>();
         _renderer = GetComponent<SpriteRenderer>();
         _controller = GetComponent<CharacterController>();
+        _audioSrc = GetComponent<AudioSource>();
     }
 
     protected Vector3 CalAttackPos()

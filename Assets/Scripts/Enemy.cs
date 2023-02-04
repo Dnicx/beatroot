@@ -12,10 +12,13 @@ public class Enemy : Entity
 
     private string _takeDamage_trigger = "takeDamage";
     private string _punch_trigger = "punch01";
+    private string _animatorBool_walk = "walk";
+
     private Vector3 lastPos;
 
     // Start is called before the first frame update
     [SerializeField] public GameObject player;
+    [SerializeField] private float deathDelaySec = 1.0f;
     [SerializeField] private float speedScaler = 1.0f;
     [SerializeField] private AnimationCurve speedCurve;
     [SerializeField] private float knockBackScaler = 0.0f;
@@ -83,11 +86,11 @@ public class Enemy : Entity
     }
 
     public void StartWalk() {
-
+        _animator.SetBool( _animatorBool_walk, true );
     }
 
     public void StopWalk() {
-
+        _animator.SetBool( _animatorBool_walk, false );
     }
 
     public void TakeDamage( int damage )
@@ -99,9 +102,13 @@ public class Enemy : Entity
         _animator.SetTrigger( _takeDamage_trigger );
         if(currentHp <= 0) {
             currentState = StateName.Death;
+            _animator.Play("Base Layer.Death", 0, 0 );
+            StartCoroutine( DeathCoroutine( deathDelaySec ) );
         }
-
-        StartCoroutine(ChangeEnemyColour());
+        else
+        {
+            StartCoroutine(ChangeEnemyColour());
+        }
     }
 
     private IEnumerator ChangeEnemyColour() {
@@ -175,5 +182,17 @@ public class Enemy : Entity
         _renderer.flipX = player.transform.position.x - transform.position.x > 0;
         lastPos = transform.position;
         lastState = currentState;
+    }
+
+    IEnumerator DeathCoroutine( float delaySec )
+    {
+        float tick = 0f;
+        while (tick <= delaySec) {
+            tick += Time.deltaTime;
+            Debug.Log(Mathf.PingPong(tick, 1));
+            yield return null;
+        }
+
+        Destroy( gameObject );
     }
 }

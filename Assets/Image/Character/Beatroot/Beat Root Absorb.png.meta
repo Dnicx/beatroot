@@ -1,0 +1,576 @@
+fileFormatVersion: 2
+guid: 739b49f566a3937418def7260859d321
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Beat Root Absorb_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 600
+        width: 560.2
+        height: 600
+      alignment: 9
+      pivot: {x: 0.4590012, y: 0.6165783}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd884b52299cf594c95a960152d2f3fb
+      internalID: 928676500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat Root Absorb_1
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 600
+        width: 560.2
+        height: 600
+      alignment: 9
+      pivot: {x: 0.4590012, y: 0.6165783}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee66e8020c7ae524db02a4aab5bd5e41
+      internalID: -475292708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat Root Absorb_2
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 600
+        width: 560.2
+        height: 600
+      alignment: 9
+      pivot: {x: 0.4590012, y: 0.6165783}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 034aa505a4de6ac478024220f6a00b90
+      internalID: 949227294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat Root Absorb_3
+      rect:
+        serializedVersion: 2
+        x: 1680
+        y: 600
+        width: 560.2
+        height: 600
+      alignment: 9
+      pivot: {x: 0.4590012, y: 0.6165783}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 693afb09cdddecc4093b077a61378c30
+      internalID: -791735468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat Root Absorb_4
+      rect:
+        serializedVersion: 2
+        x: 2240
+        y: 600
+        width: 560.2
+        height: 600
+      alignment: 9
+      pivot: {x: 0.4590012, y: 0.6165783}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62696e861c813c24ba041dd3bdec5a00
+      internalID: -1825056397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat Root Absorb_5
+      rect:
+        serializedVersion: 2
+        x: 2800
+        y: 600
+        width: 560.2
+        height: 600
+      alignment: 9
+      pivot: {x: 0.4590012, y: 0.6165783}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a83bb6a217ea5540859ed7102703b61
+      internalID: 632729405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat Root Absorb_6
+      rect:
+        serializedVersion: 2
+        x: 3360
+        y: 600
+        width: 560.2
+        height: 600
+      alignment: 9
+      pivot: {x: 0.4590012, y: 0.6165783}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a9157eed34acb146a7421ada523470c
+      internalID: -1171306204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat Root Absorb_7
+      rect:
+        serializedVersion: 2
+        x: 3920
+        y: 600
+        width: 560.2
+        height: 600
+      alignment: 9
+      pivot: {x: 0.4590012, y: 0.6165783}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7cc6e2313be8154ab348a04569e4f09
+      internalID: -1506757150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat Root Absorb_8
+      rect:
+        serializedVersion: 2
+        x: 4480
+        y: 600
+        width: 560.2
+        height: 600
+      alignment: 9
+      pivot: {x: 0.4590012, y: 0.6165783}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69168aae7a87c8449bf7cca946b9717b
+      internalID: -1001947064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat Root Absorb_9
+      rect:
+        serializedVersion: 2
+        x: 5040
+        y: 600
+        width: 560.2
+        height: 600
+      alignment: 9
+      pivot: {x: 0.4590012, y: 0.6165783}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58d95ac102c4412418db9623c416699c
+      internalID: 635946160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat Root Absorb_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 560.2
+        height: 600
+      alignment: 9
+      pivot: {x: 0.4590012, y: 0.6165783}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de728ca4a5f396e44a8a16d55b6add05
+      internalID: 1019540802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat Root Absorb_11
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 0
+        width: 560.2
+        height: 600
+      alignment: 9
+      pivot: {x: 0.4590012, y: 0.6165783}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f39c660a01a2aca40aabbe016c93052f
+      internalID: -2138992515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat Root Absorb_12
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 0
+        width: 560.2
+        height: 600
+      alignment: 9
+      pivot: {x: 0.4590012, y: 0.6165783}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc77916d233bddb419a47e5649ee082b
+      internalID: -165452312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat Root Absorb_13
+      rect:
+        serializedVersion: 2
+        x: 1680
+        y: 0
+        width: 560.2
+        height: 600
+      alignment: 9
+      pivot: {x: 0.4590012, y: 0.6165783}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8053cf90fc67f44f8add7f2c570b6a1
+      internalID: -1816889506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat Root Absorb_14
+      rect:
+        serializedVersion: 2
+        x: 2240
+        y: 0
+        width: 560.2
+        height: 600
+      alignment: 9
+      pivot: {x: 0.4590012, y: 0.6165783}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d1482a7e4dfcc14dbd2a969449fbbac
+      internalID: -66878834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat Root Absorb_15
+      rect:
+        serializedVersion: 2
+        x: 2800
+        y: 0
+        width: 560.2
+        height: 600
+      alignment: 9
+      pivot: {x: 0.4590012, y: 0.6165783}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c48833e3b99bbbc41a2ad19de9e8e974
+      internalID: 384683756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat Root Absorb_16
+      rect:
+        serializedVersion: 2
+        x: 3360
+        y: 0
+        width: 560.2
+        height: 600
+      alignment: 9
+      pivot: {x: 0.4590012, y: 0.6165783}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 353354f18334d284d99e652e8d96e288
+      internalID: -1283829730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat Root Absorb_17
+      rect:
+        serializedVersion: 2
+        x: 3920
+        y: 0
+        width: 560.2
+        height: 600
+      alignment: 9
+      pivot: {x: 0.4590012, y: 0.6165783}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00457cf7654dff645851e846c814fea7
+      internalID: 1366905363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat Root Absorb_18
+      rect:
+        serializedVersion: 2
+        x: 4480
+        y: 0
+        width: 560.2
+        height: 600
+      alignment: 9
+      pivot: {x: 0.4590012, y: 0.6165783}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e10f3c67ca533a4c9a8001c92cf4a6f
+      internalID: -1274970793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat Root Absorb_19
+      rect:
+        serializedVersion: 2
+        x: 5040
+        y: 0
+        width: 560.2
+        height: 600
+      alignment: 9
+      pivot: {x: 0.4590012, y: 0.6165783}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 729760a02c55fd04f9558ea98f654fe1
+      internalID: -1503772982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Beat Root Absorb_14: -66878834
+      Beat Root Absorb_8: -1001947064
+      Beat Root Absorb_16: -1283829730
+      Beat Root Absorb_6: -1171306204
+      Beat Root Absorb_19: -1503772982
+      Beat Root Absorb_10: 1019540802
+      Beat Root Absorb_18: -1274970793
+      Beat Root Absorb_5: 632729405
+      Beat Root Absorb_1: -475292708
+      Beat Root Absorb_15: 384683756
+      Beat Root Absorb_4: -1825056397
+      Beat Root Absorb_9: 635946160
+      Beat Root Absorb_7: -1506757150
+      Beat Root Absorb_0: 928676500
+      Beat Root Absorb_11: -2138992515
+      Beat Root Absorb_3: -791735468
+      Beat Root Absorb_17: 1366905363
+      Beat Root Absorb_12: -165452312
+      Beat Root Absorb_13: -1816889506
+      Beat Root Absorb_2: 949227294
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
