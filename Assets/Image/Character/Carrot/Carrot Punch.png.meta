@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 782a98c9240a8d94e98dfcef8e985cdf
+guid: b8806dd594941014e8489035d2007d54
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -69,7 +69,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -119,13 +119,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SpriteSheet_0
+      name: Carrot Punch_0
       rect:
         serializedVersion: 2
-        x: 71
-        y: 300
-        width: 152
-        height: 263
+        x: 0
+        y: 0
+        width: 413
+        height: 472
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -133,20 +133,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 290647d239bfecd45be3a0f23dcb5ef3
-      internalID: 809687171
+      spriteID: 0d157f78e0dfe7d419a40d0178a12f6a
+      internalID: -196734548
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpriteSheet_1
+      name: Carrot Punch_1
       rect:
         serializedVersion: 2
-        x: 370
-        y: 300
-        width: 153
-        height: 264
+        x: 413
+        y: 0
+        width: 413
+        height: 472
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,20 +154,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 42c583669c7d9d14abc69e8a41deb2a1
-      internalID: -743563533
+      spriteID: b95604683655a274ea8b447588c544d0
+      internalID: 1444482226
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpriteSheet_2
+      name: Carrot Punch_2
       rect:
         serializedVersion: 2
-        x: 670
-        y: 300
-        width: 153
-        height: 265
+        x: 826
+        y: 0
+        width: 413
+        height: 472
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -175,20 +175,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e699d2fa772568645bee7b01b9e7fcad
-      internalID: -1059939869
+      spriteID: 179cee1801494694f9fcdbc3c10dddd9
+      internalID: -770562238
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpriteSheet_3
+      name: Carrot Punch_3
       rect:
         serializedVersion: 2
-        x: 972
-        y: 302
-        width: 174
-        height: 298
+        x: 1239
+        y: 0
+        width: 413
+        height: 472
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -196,20 +196,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4c1885ce2e3738444adefeb1633950b5
-      internalID: -731227324
+      spriteID: a04d3db68464c6045bd7c9933586d704
+      internalID: 1052811864
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpriteSheet_4
+      name: Carrot Punch_4
       rect:
         serializedVersion: 2
-        x: 48
-        y: 5
-        width: 209
-        height: 250
+        x: 1652
+        y: 0
+        width: 413
+        height: 472
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -217,20 +217,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0cef8217316c96148ab4e673c2a90066
-      internalID: -1982833729
+      spriteID: c08e5793ba4195f4a83f430fee745eb8
+      internalID: -1735048029
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpriteSheet_5
+      name: Carrot Punch_5
       rect:
         serializedVersion: 2
-        x: 350
-        y: 1
-        width: 200
-        height: 242
+        x: 2065
+        y: 0
+        width: 413
+        height: 472
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -238,20 +238,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 167884108c977224c8468ba24ecb89c0
-      internalID: -631214867
+      spriteID: 72333e4c51066fd4ebfd5fddc3485505
+      internalID: -1621802956
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpriteSheet_6
+      name: Carrot Punch_6
       rect:
         serializedVersion: 2
-        x: 608
-        y: 6
-        width: 274
-        height: 244
+        x: 2478
+        y: 0
+        width: 413
+        height: 472
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -259,8 +259,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 57a1691f1c809744aa64da6ee30f7c1c
-      internalID: -815797076
+      spriteID: c5e8af87358a13441a6e4eb18a7f38cf
+      internalID: 733332738
       vertices: []
       indices: 
       edges: []
@@ -276,13 +276,13 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      SpriteSheet_5: -631214867
-      SpriteSheet_4: -1982833729
-      SpriteSheet_2: -1059939869
-      SpriteSheet_6: -815797076
-      SpriteSheet_0: 809687171
-      SpriteSheet_1: -743563533
-      SpriteSheet_3: -731227324
+      Carrot Punch_3: 1052811864
+      Carrot Punch_1: 1444482226
+      Carrot Punch_6: 733332738
+      Carrot Punch_5: -1621802956
+      Carrot Punch_2: -770562238
+      Carrot Punch_4: -1735048029
+      Carrot Punch_0: -196734548
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 856818cbf645f96469a71db256ebc2b4
+guid: da6fa0a1eba42684ba0a30176ac7d804
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -69,11 +69,11 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
-    compressionQuality: 50
+    compressionQuality: 0
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
@@ -83,7 +83,7 @@ TextureImporter:
     buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: -1
+    textureFormat: 12
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
@@ -119,190 +119,190 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Beat Root Idle_0
+      name: Redish Attack_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 225
-        height: 441
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 771
+        height: 706
+      alignment: 9
+      pivot: {x: 0.7133593, y: 0.5070822}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 39b6e51fc9b701f47934ef88048114f2
-      internalID: 1853867864
+      spriteID: b7d19982ae481014c8e8a388227dc0a2
+      internalID: -1845017829
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Beat Root Idle_1
+      name: Redish Attack_1
       rect:
         serializedVersion: 2
-        x: 225
+        x: 771
         y: 0
-        width: 225
-        height: 441
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 771
+        height: 706
+      alignment: 9
+      pivot: {x: 0.7133593, y: 0.5070822}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 01c12f7fd0c477b408bb63675725f247
-      internalID: -675050736
+      spriteID: d552a964f4fbc3f46a07533edf284a8b
+      internalID: 1001797253
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Beat Root Idle_2
+      name: Redish Attack_2
       rect:
         serializedVersion: 2
-        x: 450
+        x: 1542
         y: 0
-        width: 225
-        height: 441
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 771
+        height: 706
+      alignment: 9
+      pivot: {x: 0.7133593, y: 0.5070822}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 62c7c92c00d08224da17f147fd28226c
-      internalID: -1472668640
+      spriteID: a18f62d02c1f3154dba88f35ae977b5c
+      internalID: -1853311901
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Beat Root Idle_3
+      name: Redish Attack_3
       rect:
         serializedVersion: 2
-        x: 675
+        x: 2313
         y: 0
-        width: 225
-        height: 441
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 771
+        height: 706
+      alignment: 9
+      pivot: {x: 0.7133593, y: 0.5070822}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7457a1f4fc5a44f42b45578b00d0a20b
-      internalID: 502399486
+      spriteID: 0717155c208212645bc31741369fa51c
+      internalID: 255535952
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Beat Root Idle_4
+      name: Redish Attack_4
       rect:
         serializedVersion: 2
-        x: 900
+        x: 3084
         y: 0
-        width: 225
-        height: 441
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 771
+        height: 706
+      alignment: 9
+      pivot: {x: 0.7133593, y: 0.5070822}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2a5fd96e1e3573b48908a31fa5b47672
-      internalID: 84480897
+      spriteID: 5f04c0cf10269d0419a2bd7698eee86c
+      internalID: -83894748
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Beat Root Idle_5
+      name: Redish Attack_5
       rect:
         serializedVersion: 2
-        x: 1125
+        x: 3855
         y: 0
-        width: 225
-        height: 441
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 771
+        height: 706
+      alignment: 9
+      pivot: {x: 0.7133593, y: 0.5070822}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4fc4334c6c2e5a747a0cc9ce39e7635b
-      internalID: 1481619690
+      spriteID: ee15bfea6e99612478f8d2fe25601d2e
+      internalID: 269413785
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Beat Root Idle_6
+      name: Redish Attack_6
       rect:
         serializedVersion: 2
-        x: 1350
+        x: 4626
         y: 0
-        width: 225
-        height: 441
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 771
+        height: 706
+      alignment: 9
+      pivot: {x: 0.7133593, y: 0.5070822}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d41ecb90115821c4ebcf8bb6ef0c03a8
-      internalID: -833429360
+      spriteID: 27dce2ebe3b55334d93a6ed7b610b884
+      internalID: -829256626
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Beat Root Idle_7
+      name: Redish Attack_7
       rect:
         serializedVersion: 2
-        x: 1575
+        x: 5397
         y: 0
-        width: 225
-        height: 441
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 771
+        height: 706
+      alignment: 9
+      pivot: {x: 0.7133593, y: 0.5070822}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1e3c11bc0542fc9429e06a74889eb35b
-      internalID: 1179157511
+      spriteID: c57f9917445fd864ea3571900796d717
+      internalID: -533797026
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Beat Root Idle_8
+      name: Redish Attack_8
       rect:
         serializedVersion: 2
-        x: 1800
+        x: 6168
         y: 0
-        width: 225
-        height: 441
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 771
+        height: 706
+      alignment: 9
+      pivot: {x: 0.7133593, y: 0.5070822}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7834b67f49ff02a4ab801696d3dba8bd
-      internalID: 761847768
+      spriteID: a6400b70c46496e41b96a127a6953c0b
+      internalID: 878732113
       vertices: []
       indices: 
       edges: []
@@ -318,15 +318,15 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Beat Root Idle_8: 761847768
-      Beat Root Idle_4: 84480897
-      Beat Root Idle_7: 1179157511
-      Beat Root Idle_5: 1481619690
-      Beat Root Idle_2: -1472668640
-      Beat Root Idle_0: 1853867864
-      Beat Root Idle_3: 502399486
-      Beat Root Idle_6: -833429360
-      Beat Root Idle_1: -675050736
+      Redish Attack_6: -829256626
+      Redish Attack_1: 1001797253
+      Redish Attack_3: 255535952
+      Redish Attack_8: 878732113
+      Redish Attack_7: -533797026
+      Redish Attack_4: -83894748
+      Redish Attack_2: -1853311901
+      Redish Attack_5: 269413785
+      Redish Attack_0: -1845017829
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

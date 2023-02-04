@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 856818cbf645f96469a71db256ebc2b4
+guid: 8ffd4618dbbcf7d46bbd267f5ce39976
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -69,7 +69,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -119,13 +119,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Beat Root Idle_0
+      name: Carrot Idle_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 225
-        height: 441
+        width: 282
+        height: 473
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -133,20 +133,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 39b6e51fc9b701f47934ef88048114f2
-      internalID: 1853867864
+      spriteID: c936ac05871b74347bd461b6815d1693
+      internalID: 943419151
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Beat Root Idle_1
+      name: Carrot Idle_1
       rect:
         serializedVersion: 2
-        x: 225
+        x: 282
         y: 0
-        width: 225
-        height: 441
+        width: 282
+        height: 473
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,20 +154,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 01c12f7fd0c477b408bb63675725f247
-      internalID: -675050736
+      spriteID: ba73ff82031d6554d8e42d53e866f35b
+      internalID: -1060712824
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Beat Root Idle_2
+      name: Carrot Idle_2
       rect:
         serializedVersion: 2
-        x: 450
+        x: 564
         y: 0
-        width: 225
-        height: 441
+        width: 282
+        height: 473
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -175,20 +175,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 62c7c92c00d08224da17f147fd28226c
-      internalID: -1472668640
+      spriteID: ea3d70a278ce465448389156ba1d476f
+      internalID: 775955822
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Beat Root Idle_3
+      name: Carrot Idle_3
       rect:
         serializedVersion: 2
-        x: 675
+        x: 846
         y: 0
-        width: 225
-        height: 441
+        width: 282
+        height: 473
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -196,20 +196,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7457a1f4fc5a44f42b45578b00d0a20b
-      internalID: 502399486
+      spriteID: b3319cd8a7f3ee04bbd1ea3b9d9f7300
+      internalID: 874225643
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Beat Root Idle_4
+      name: Carrot Idle_4
       rect:
         serializedVersion: 2
-        x: 900
+        x: 1128
         y: 0
-        width: 225
-        height: 441
+        width: 282
+        height: 473
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -217,20 +217,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2a5fd96e1e3573b48908a31fa5b47672
-      internalID: 84480897
+      spriteID: 2752057c1dd873b4d9ce9496b6f5c91c
+      internalID: 1736496177
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Beat Root Idle_5
+      name: Carrot Idle_5
       rect:
         serializedVersion: 2
-        x: 1125
+        x: 1410
         y: 0
-        width: 225
-        height: 441
+        width: 282
+        height: 473
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -238,20 +238,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4fc4334c6c2e5a747a0cc9ce39e7635b
-      internalID: 1481619690
+      spriteID: b4b0c148d95f1a340a8a7e32de40034d
+      internalID: -735872401
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Beat Root Idle_6
+      name: Carrot Idle_6
       rect:
         serializedVersion: 2
-        x: 1350
+        x: 1692
         y: 0
-        width: 225
-        height: 441
+        width: 282
+        height: 473
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -259,50 +259,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d41ecb90115821c4ebcf8bb6ef0c03a8
-      internalID: -833429360
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Beat Root Idle_7
-      rect:
-        serializedVersion: 2
-        x: 1575
-        y: 0
-        width: 225
-        height: 441
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1e3c11bc0542fc9429e06a74889eb35b
-      internalID: 1179157511
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Beat Root Idle_8
-      rect:
-        serializedVersion: 2
-        x: 1800
-        y: 0
-        width: 225
-        height: 441
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7834b67f49ff02a4ab801696d3dba8bd
-      internalID: 761847768
+      spriteID: 2fd77e8f50c92a041a5b6f1f10d214b7
+      internalID: 1482593979
       vertices: []
       indices: 
       edges: []
@@ -318,15 +276,13 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Beat Root Idle_8: 761847768
-      Beat Root Idle_4: 84480897
-      Beat Root Idle_7: 1179157511
-      Beat Root Idle_5: 1481619690
-      Beat Root Idle_2: -1472668640
-      Beat Root Idle_0: 1853867864
-      Beat Root Idle_3: 502399486
-      Beat Root Idle_6: -833429360
-      Beat Root Idle_1: -675050736
+      Carrot Idle_3: 874225643
+      Carrot Idle_5: -735872401
+      Carrot Idle_6: 1482593979
+      Carrot Idle_0: 943419151
+      Carrot Idle_2: 775955822
+      Carrot Idle_1: -1060712824
+      Carrot Idle_4: 1736496177
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

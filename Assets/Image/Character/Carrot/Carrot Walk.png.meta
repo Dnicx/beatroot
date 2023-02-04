@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 856818cbf645f96469a71db256ebc2b4
+guid: bdd25f346daf35349b5faac98167a3e7
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -69,7 +69,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -119,13 +119,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Beat Root Idle_0
+      name: Carrot Walk_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 225
-        height: 441
+        width: 302
+        height: 469
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -133,20 +133,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 39b6e51fc9b701f47934ef88048114f2
-      internalID: 1853867864
+      spriteID: a87ee6af4d0dfb54abdebd2613ae94c3
+      internalID: -710482395
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Beat Root Idle_1
+      name: Carrot Walk_1
       rect:
         serializedVersion: 2
-        x: 225
+        x: 302
         y: 0
-        width: 225
-        height: 441
+        width: 302
+        height: 469
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,20 +154,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 01c12f7fd0c477b408bb63675725f247
-      internalID: -675050736
+      spriteID: 170d027ab4fe4d64d904f95854f4c054
+      internalID: -1620399934
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Beat Root Idle_2
+      name: Carrot Walk_2
       rect:
         serializedVersion: 2
-        x: 450
+        x: 604
         y: 0
-        width: 225
-        height: 441
+        width: 302
+        height: 469
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -175,20 +175,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 62c7c92c00d08224da17f147fd28226c
-      internalID: -1472668640
+      spriteID: a47644072115c6548b233016e06066bb
+      internalID: 1951648774
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Beat Root Idle_3
+      name: Carrot Walk_3
       rect:
         serializedVersion: 2
-        x: 675
+        x: 906
         y: 0
-        width: 225
-        height: 441
+        width: 302
+        height: 469
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -196,20 +196,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7457a1f4fc5a44f42b45578b00d0a20b
-      internalID: 502399486
+      spriteID: 00c3050901321a94bab6a7707c467b8c
+      internalID: 1133603448
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Beat Root Idle_4
+      name: Carrot Walk_4
       rect:
         serializedVersion: 2
-        x: 900
+        x: 1208
         y: 0
-        width: 225
-        height: 441
+        width: 302
+        height: 469
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -217,20 +217,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2a5fd96e1e3573b48908a31fa5b47672
-      internalID: 84480897
+      spriteID: e288187fa73364d49a43764968900161
+      internalID: -1750887785
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Beat Root Idle_5
+      name: Carrot Walk_5
       rect:
         serializedVersion: 2
-        x: 1125
+        x: 1510
         y: 0
-        width: 225
-        height: 441
+        width: 302
+        height: 469
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -238,20 +238,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4fc4334c6c2e5a747a0cc9ce39e7635b
-      internalID: 1481619690
+      spriteID: 6cdfe0c6e61722848988ff5d54eb9128
+      internalID: 2115691869
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Beat Root Idle_6
+      name: Carrot Walk_6
       rect:
         serializedVersion: 2
-        x: 1350
+        x: 1812
         y: 0
-        width: 225
-        height: 441
+        width: 302
+        height: 469
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -259,20 +259,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d41ecb90115821c4ebcf8bb6ef0c03a8
-      internalID: -833429360
+      spriteID: 036b55bb4a5b25c4e89efb48716b0203
+      internalID: -1016369963
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Beat Root Idle_7
+      name: Carrot Walk_7
       rect:
         serializedVersion: 2
-        x: 1575
+        x: 2114
         y: 0
-        width: 225
-        height: 441
+        width: 302
+        height: 469
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -280,20 +280,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1e3c11bc0542fc9429e06a74889eb35b
-      internalID: 1179157511
+      spriteID: 5fb4b4cbe63fb194daca17fdcaa008b6
+      internalID: -902274678
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Beat Root Idle_8
+      name: Carrot Walk_8
       rect:
         serializedVersion: 2
-        x: 1800
+        x: 2416
         y: 0
-        width: 225
-        height: 441
+        width: 302
+        height: 469
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -301,8 +301,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7834b67f49ff02a4ab801696d3dba8bd
-      internalID: 761847768
+      spriteID: 4ac2ea7aaedf26940953f01300d49406
+      internalID: 1417870014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carrot Walk_9
+      rect:
+        serializedVersion: 2
+        x: 2718
+        y: 0
+        width: 302
+        height: 469
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dc6319832b87e54d84320bbe0aef572
+      internalID: -1911850897
       vertices: []
       indices: 
       edges: []
@@ -318,15 +339,16 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Beat Root Idle_8: 761847768
-      Beat Root Idle_4: 84480897
-      Beat Root Idle_7: 1179157511
-      Beat Root Idle_5: 1481619690
-      Beat Root Idle_2: -1472668640
-      Beat Root Idle_0: 1853867864
-      Beat Root Idle_3: 502399486
-      Beat Root Idle_6: -833429360
-      Beat Root Idle_1: -675050736
+      Carrot Walk_5: 2115691869
+      Carrot Walk_2: 1951648774
+      Carrot Walk_8: 1417870014
+      Carrot Walk_9: -1911850897
+      Carrot Walk_7: -902274678
+      Carrot Walk_1: -1620399934
+      Carrot Walk_6: -1016369963
+      Carrot Walk_3: 1133603448
+      Carrot Walk_0: -710482395
+      Carrot Walk_4: -1750887785
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

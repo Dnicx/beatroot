@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 856818cbf645f96469a71db256ebc2b4
+guid: 18abd6aa4c4269d408cb6e41edc8c0d8
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -119,190 +119,211 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Beat Root Idle_0
+      name: Radish Walk_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 225
-        height: 441
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 264
+        height: 713
+      alignment: 9
+      pivot: {x: 0.5394182, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 39b6e51fc9b701f47934ef88048114f2
-      internalID: 1853867864
+      spriteID: bb3e436d0c9dc504b913cb69f6e2b0c8
+      internalID: -235991193
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Beat Root Idle_1
+      name: Radish Walk_1
       rect:
         serializedVersion: 2
-        x: 225
+        x: 264
         y: 0
-        width: 225
-        height: 441
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 264
+        height: 713
+      alignment: 9
+      pivot: {x: 0.5394182, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 01c12f7fd0c477b408bb63675725f247
-      internalID: -675050736
+      spriteID: 93582cfd42131ff4bb907dd49c691551
+      internalID: 1442332983
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Beat Root Idle_2
+      name: Radish Walk_2
       rect:
         serializedVersion: 2
-        x: 450
+        x: 528
         y: 0
-        width: 225
-        height: 441
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 264
+        height: 713
+      alignment: 9
+      pivot: {x: 0.5394182, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 62c7c92c00d08224da17f147fd28226c
-      internalID: -1472668640
+      spriteID: b6660b1d27672d942b7bf1c66f482c37
+      internalID: 2012431673
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Beat Root Idle_3
+      name: Radish Walk_3
       rect:
         serializedVersion: 2
-        x: 675
+        x: 792
         y: 0
-        width: 225
-        height: 441
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 264
+        height: 713
+      alignment: 9
+      pivot: {x: 0.5394182, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7457a1f4fc5a44f42b45578b00d0a20b
-      internalID: 502399486
+      spriteID: 6936be6bc4c413b479e5636583e463c2
+      internalID: 1788692129
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Beat Root Idle_4
+      name: Radish Walk_4
       rect:
         serializedVersion: 2
-        x: 900
+        x: 1056
         y: 0
-        width: 225
-        height: 441
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 264
+        height: 713
+      alignment: 9
+      pivot: {x: 0.5394182, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2a5fd96e1e3573b48908a31fa5b47672
-      internalID: 84480897
+      spriteID: d91f136ad61610b4da61f1f73a77b49a
+      internalID: 986996662
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Beat Root Idle_5
+      name: Radish Walk_5
       rect:
         serializedVersion: 2
-        x: 1125
+        x: 1320
         y: 0
-        width: 225
-        height: 441
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 264
+        height: 713
+      alignment: 9
+      pivot: {x: 0.5394182, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4fc4334c6c2e5a747a0cc9ce39e7635b
-      internalID: 1481619690
+      spriteID: b09bc5ec6b4515d40b6130ebaced2ea5
+      internalID: 1494460187
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Beat Root Idle_6
+      name: Radish Walk_6
       rect:
         serializedVersion: 2
-        x: 1350
+        x: 1584
         y: 0
-        width: 225
-        height: 441
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 264
+        height: 713
+      alignment: 9
+      pivot: {x: 0.5394182, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d41ecb90115821c4ebcf8bb6ef0c03a8
-      internalID: -833429360
+      spriteID: 883649a7df1f1aa4894007d6485c265d
+      internalID: 1078398065
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Beat Root Idle_7
+      name: Radish Walk_7
       rect:
         serializedVersion: 2
-        x: 1575
+        x: 1848
         y: 0
-        width: 225
-        height: 441
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 264
+        height: 713
+      alignment: 9
+      pivot: {x: 0.5394182, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1e3c11bc0542fc9429e06a74889eb35b
-      internalID: 1179157511
+      spriteID: de0474188c36d9843a4e6a30d97f1eae
+      internalID: 1625917707
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Beat Root Idle_8
+      name: Radish Walk_8
       rect:
         serializedVersion: 2
-        x: 1800
+        x: 2112
         y: 0
-        width: 225
-        height: 441
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 264
+        height: 713
+      alignment: 9
+      pivot: {x: 0.5394182, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7834b67f49ff02a4ab801696d3dba8bd
-      internalID: 761847768
+      spriteID: 6a7929f32ef29bc499ad6c1eba575aad
+      internalID: 2021791210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Radish Walk_9
+      rect:
+        serializedVersion: 2
+        x: 2376
+        y: 0
+        width: 264
+        height: 713
+      alignment: 9
+      pivot: {x: 0.5394182, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6fd1083aaf7e244face84d5b6b33b62
+      internalID: -1875145229
       vertices: []
       indices: 
       edges: []
@@ -318,15 +339,16 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Beat Root Idle_8: 761847768
-      Beat Root Idle_4: 84480897
-      Beat Root Idle_7: 1179157511
-      Beat Root Idle_5: 1481619690
-      Beat Root Idle_2: -1472668640
-      Beat Root Idle_0: 1853867864
-      Beat Root Idle_3: 502399486
-      Beat Root Idle_6: -833429360
-      Beat Root Idle_1: -675050736
+      Radish Walk_7: 1625917707
+      Radish Walk_1: 1442332983
+      Radish Walk_6: 1078398065
+      Radish Walk_9: -1875145229
+      Radish Walk_2: 2012431673
+      Radish Walk_3: 1788692129
+      Radish Walk_8: 2021791210
+      Radish Walk_0: -235991193
+      Radish Walk_4: 986996662
+      Radish Walk_5: 1494460187
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
