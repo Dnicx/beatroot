@@ -4,9 +4,10 @@ using UnityEngine;
 
 public interface IMoveableAttack
 {
+    bool getIsPaused();
     void setIsPaused(bool isPaused);
     void RunStart();
-    void RunUpdate();
+    Vector3 RunUpdate();
     void TargetStart();
     void TargetUpdate();
     void Attack();
