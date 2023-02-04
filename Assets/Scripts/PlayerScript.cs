@@ -12,6 +12,8 @@ public class PlayerScript : CharacterScript
     // 
     private string _animatorTrig_punch = "punch01";
     private string _animatorTrig_kick = "kick01";
+    protected string _animationTag_absorb = "absorb";
+    private string _animatorBool_absorb = "absorbing";
     private string _enemyTag = "Enemy";
 
     // 
@@ -42,6 +44,10 @@ public class PlayerScript : CharacterScript
     void Update()
     {
         if ( _animator.GetCurrentAnimatorStateInfo(0).IsTag( _animationTag_Attacking ))
+        {
+            
+        }
+        else if ( _animator.GetCurrentAnimatorStateInfo(0).IsTag( _animationTag_absorb ))
         {
             
         }
@@ -100,7 +106,8 @@ public class PlayerScript : CharacterScript
     public void Kick( InputAction.CallbackContext context )
     {
 
-         if ( context.performed ){
+         if ( context.performed )
+         {
             _animator.SetTrigger( _animatorTrig_kick );
 
             bool isHit;
@@ -114,6 +121,18 @@ public class PlayerScript : CharacterScript
             
         }
 
+    }
+
+    public void Absorb( InputAction.CallbackContext context )
+    {
+        if ( context.performed )
+        {
+            _animator.SetBool( _animatorBool_absorb, true );
+        }
+
+        if ( context.canceled ){
+             _animator.SetBool( _animatorBool_absorb, false );
+        }
     }
 
 }
