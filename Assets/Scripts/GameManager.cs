@@ -7,8 +7,16 @@ public class GameManager : MonoBehaviour
 {   
 
     public static GameManager Instance;
-
     public GameObject loadingScreen;
+
+    private Camera mainCamera;
+
+    private GameState currentState = GameState.FollowPlayer;
+
+    enum GameState {
+        FollowPlayer,
+        Lock
+    };
 
     private void Awake()
     {

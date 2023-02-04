@@ -12,6 +12,8 @@ public class Enemy : Entity
 
     private string _takeDamage_trigger = "takeDamage";
     private string _punch_trigger = "punch01";
+    private string _animatorBool_walk = "walk";
+
     private Vector3 lastPos;
 
     // Start is called before the first frame update
@@ -90,11 +92,11 @@ public class Enemy : Entity
     }
 
     public void StartWalk() {
-
+        _animator.SetBool( _animatorBool_walk, true );
     }
 
     public void StopWalk() {
-
+        _animator.SetBool( _animatorBool_walk, false );
     }
 
     public void TakeDamage( int damage )
