@@ -33,13 +33,6 @@ public class Enemy : Entity
     [SerializeField] private int colorRound = 3;
     private Color32 startColor;
     private Color32 endColor;
-    
-
-    enum MovementType {
-        CircleAround,
-        CrawlTarget,
-        TargetSpotUpdate
-    };
 
     [SerializeField] private double distanceEps = 0.005;
     public enum StateName {

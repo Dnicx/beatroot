@@ -2,6 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+public enum MovementType {
+        CircleAround,
+        CrawlTarget,
+        TargetSpotUpdate
+    };
 public abstract class MovementBase: IMoveableAttack
 {
     [SerializeField] protected GameObject player;
