@@ -14,19 +14,19 @@ PrefabInstance:
       objectReference: {fileID: -1060712824, guid: 8ffd4618dbbcf7d46bbd267f5ce39976, type: 3}
     - target: {fileID: 3805600928581858773, guid: e8e3a629fe8b5ba4a863a38bfebfda6b, type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3805600928581858773, guid: e8e3a629fe8b5ba4a863a38bfebfda6b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.01
+      value: 1.47
       objectReference: {fileID: 0}
     - target: {fileID: 3805600928581858773, guid: e8e3a629fe8b5ba4a863a38bfebfda6b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.4
+      value: 2.33
       objectReference: {fileID: 0}
     - target: {fileID: 3805600928581858773, guid: e8e3a629fe8b5ba4a863a38bfebfda6b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.62
+      value: 7.35
       objectReference: {fileID: 0}
     - target: {fileID: 3805600928581858773, guid: e8e3a629fe8b5ba4a863a38bfebfda6b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -58,12 +58,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3805600928581858774, guid: e8e3a629fe8b5ba4a863a38bfebfda6b, type: 3}
       propertyPath: m_Name
-      value: Carrot
+      value: Carrot Variant
       objectReference: {fileID: 0}
     - target: {fileID: 3805600928581858775, guid: e8e3a629fe8b5ba4a863a38bfebfda6b, type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: 1fdff845a7f3bb94e802cf765aa55d2d, type: 2}
+      objectReference: {fileID: 9100000, guid: 790c0adbd103ad647851d0830ecefd64, type: 2}
     - target: {fileID: 3805600928581858779, guid: e8e3a629fe8b5ba4a863a38bfebfda6b, type: 3}
       propertyPath: m_Height
       value: 4.59

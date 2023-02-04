@@ -18,7 +18,7 @@ public class Enemy : Entity
 
     public void TakeDamage( int damage )
     {
-        HP -= damage;
+        currentHp -= damage;
         _animator.SetTrigger( _takeDamage_trigger );
     }
 

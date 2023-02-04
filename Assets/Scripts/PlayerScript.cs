@@ -17,7 +17,7 @@ public class PlayerScript : MonoBehaviour
     private string _animationState_Walking = "Walking";
     private string _animationTag_Attacking = "Attack";
     
-    private string _Damage_message = "TakeDamage";
+    private string _damage_message = "TakeDamage";
     private string _enemyTag = "Enemy";
 
     // 
@@ -109,8 +109,8 @@ public class PlayerScript : MonoBehaviour
             Debug.Log( "Boom!" );
             _animator.SetTrigger( _animatorTrig_punch );
 
-            Vector3 globalAttackPos = CalAttackPos();
-            Attack( globalAttackPos, radius, 1 );
+            // Vector3 globalAttackPos = CalAttackPos();
+            Attack( CalAttackPos(), radius, 1 );
 
         }
 
@@ -122,6 +122,10 @@ public class PlayerScript : MonoBehaviour
          if ( context.performed ){
             Debug.Log( "Boom!" );
             _animator.SetTrigger( _animatorTrig_kick );
+
+            // Vector3 globalAttackPos = CalAttackPos();
+            Attack( CalAttackPos(), radius, 1 );
+
 
         }
 
@@ -145,7 +149,7 @@ public class PlayerScript : MonoBehaviour
         {
             if (_hitCollider[i].gameObject.tag == _enemyTag)
             {
-                _hitCollider[i].SendMessage( "TakeDamage", power );
+                _hitCollider[i].SendMessage( _damage_message, power );
             }
             
         }
