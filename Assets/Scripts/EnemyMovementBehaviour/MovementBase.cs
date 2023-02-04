@@ -10,12 +10,17 @@ public abstract class MovementBase: IMoveableAttack
     [SerializeField] private AnimationCurve speedCurve;
 
     protected Vector3 targetPosition;
+    protected bool isPaused = false;
 
     public MovementBase (GameObject c_player, GameObject c_enemy, float c_speedScaler, AnimationCurve c_speedCurve) {
         player = c_player;
         enemy = c_enemy;
         speedScaler = c_speedScaler;
         speedCurve = c_speedCurve;
+    }
+
+    public void setIsPaused(bool isPaused) {
+        this.isPaused = isPaused;
     }
 
     protected Vector3 validTarget(Vector3 position) {
@@ -32,14 +37,23 @@ public abstract class MovementBase: IMoveableAttack
     // Update is called once per frame
     public void RunUpdate()
     {
-        TargetUpdate(); // Movement target logic
-        targetPosition = validTarget(targetPosition);
+        if(isPaused) {
+            targetPosition = validTarget(enemy.transform.position); // Reset target transform
+        } else {
+            TargetUpdate(); // Movement target logic
+            targetPosition = validTarget(targetPosition);
 
-        Attack(); // Attack logic
-
+            Attack(); // Attack logic
+        }
+        
         // Movement control
         float speed = speedCurve.Evaluate(Vector3.Distance(enemy.transform.position, targetPosition));
-        enemy.transform.position = Vector3.Lerp(enemy.transform.position, targetPosition, speedScaler * speed * Time.deltaTime);
+
+        CharacterController enemy_controller = enemy.GetComponent("CharacterController") as CharacterController;
+        enemy_controller.Move(
+            Vector3.Lerp(enemy.transform.position, targetPosition, speedScaler * speed * Time.deltaTime)
+            - enemy.transform.position
+        );
     }
 
     public abstract void TargetStart();

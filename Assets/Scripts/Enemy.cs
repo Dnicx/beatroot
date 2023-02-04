@@ -6,6 +6,8 @@ public class Enemy : Entity
 {
 
     private Animator _animator;
+    private SpriteRenderer _renderer;
+    private CharacterController _controller;
 
     private string _takeDamage_trigger = "takeDamage";
     private string _punch_trigger = "punch01";
@@ -35,6 +37,11 @@ public class Enemy : Entity
     public IMoveableAttack currentBehaviour {
         get => m_currentBehaviour;
         set => m_currentBehaviour = value;
+    }
+
+    void Awake() {
+        _renderer = GetComponent<SpriteRenderer>();
+        _controller = GetComponent<CharacterController>();
     }
 
     // Start is called before the first frame update
@@ -73,6 +80,13 @@ public class Enemy : Entity
     }
 
     void Update() {
+        if(_animator.GetCurrentAnimatorStateInfo(0).IsName("TakingDamage")) {
+            m_currentBehaviour.setIsPaused(true);
+        } else {
+            m_currentBehaviour.setIsPaused(false);
+        }
         m_currentBehaviour.RunUpdate();
+
+        _renderer.flipX = player.transform.position.x - transform.position.x > 0;
     }
 }
