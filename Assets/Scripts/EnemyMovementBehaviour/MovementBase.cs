@@ -17,17 +17,24 @@ public abstract class MovementBase: IMoveableAttack
         speedScaler = c_speedScaler;
         speedCurve = c_speedCurve;
     }
+
+    protected Vector3 validTarget(Vector3 position) {
+        return new Vector3(position.x, enemy.transform.position.y, position.z);
+    }
+
     public void RunStart()
     {
-        // Default value
-        targetPosition = enemy.transform.position;
+        targetPosition = validTarget(enemy.transform.position); // Default value
         TargetStart();
+        targetPosition = validTarget(targetPosition);
     }
 
     // Update is called once per frame
     public void RunUpdate()
     {
         TargetUpdate(); // Movement target logic
+        targetPosition = validTarget(targetPosition);
+
         Attack(); // Attack logic
 
         // Movement control
