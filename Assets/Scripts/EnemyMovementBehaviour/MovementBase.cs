@@ -19,6 +19,10 @@ public abstract class MovementBase: IMoveableAttack
         speedCurve = c_speedCurve;
     }
 
+    public bool getIsPaused() {
+        return isPaused;
+    }
+
     public void setIsPaused(bool isPaused) {
         this.isPaused = isPaused;
     }
@@ -35,7 +39,7 @@ public abstract class MovementBase: IMoveableAttack
     }
 
     // Update is called once per frame
-    public void RunUpdate()
+    public Vector3 RunUpdate()
     {
         if(isPaused) {
             targetPosition = validTarget(enemy.transform.position); // Reset target transform
@@ -49,11 +53,9 @@ public abstract class MovementBase: IMoveableAttack
         // Movement control
         float speed = speedCurve.Evaluate(Vector3.Distance(enemy.transform.position, targetPosition));
 
-        CharacterController enemy_controller = enemy.GetComponent("CharacterController") as CharacterController;
-        enemy_controller.Move(
-            Vector3.Lerp(enemy.transform.position, targetPosition, speedScaler * speed * Time.deltaTime)
-            - enemy.transform.position
-        );
+        Vector3 motionVector = (Vector3.Lerp(enemy.transform.position, targetPosition, speedScaler * speed * Time.deltaTime)) - enemy.transform.position;
+
+        return motionVector;
     }
 
     public abstract void TargetStart();
