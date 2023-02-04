@@ -89,8 +89,8 @@ public class PlayerScript : CharacterScript
 
             if ( isHit )
             {
-                audioSrc.clip = punchSfx;
-                audioSrc.Play();
+                _audioSrc.clip = punchSfx;
+                _audioSrc.Play();
             }
             
         }
@@ -108,8 +108,8 @@ public class PlayerScript : CharacterScript
 
             if ( isHit )
             {
-                audioSrc.clip = kickSfx;
-                audioSrc.Play();
+                _audioSrc.clip = kickSfx;
+                _audioSrc.Play();
             }
             
         }

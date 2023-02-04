@@ -7,7 +7,7 @@ public class StageLinker : MonoBehaviour
 
     // This class contains link to another scene
 
-    public GameObject SceneLinkTrigger;
+    public int nextSceneNum;
 
     // Start is called before the first frame update
     void Start()
@@ -21,6 +21,13 @@ public class StageLinker : MonoBehaviour
         
     }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "Player" )
+        {
+            GameManager.Instance.LoadScene( nextSceneNum );
 
+        }
+    }
 
 }
