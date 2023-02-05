@@ -32636,7 +32636,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   loadingScreen: {fileID: 544422493}
-  Player: {fileID: 0}
+  player: {fileID: 0}
+  rightThreshold: 0
+  leftThreshold: 0
 --- !u!1 &1752276284
 GameObject:
   m_ObjectHideFlags: 0

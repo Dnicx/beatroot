@@ -11,9 +11,11 @@ public class GameManager : MonoBehaviour
 
     private Camera mainCamera;
 
-    public GameObject Player;
+    public GameObject player;
 
     private GameState currentState = GameState.FollowPlayer;
+    public float rightThreshold;
+    public float leftThreshold;
 
     public enum GameState {
         FollowPlayer,
@@ -32,6 +34,11 @@ public class GameManager : MonoBehaviour
         
     }
 
+    public void updateState( GameState state )
+    {
+        currentState = state;
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -40,7 +47,19 @@ public class GameManager : MonoBehaviour
 
     private void LateUpdate()
     {
-        
+        float xDiff = player.transform.position.x - mainCamera.transform.position.x;
+
+        float speed = 10.0f;
+
+        if ( xDiff > rightThreshold )
+        {
+            mainCamera.transform.Translate( speed * Time.deltaTime, 0, 0 );
+        }
+        if ( xDiff < leftThreshold )
+        {
+            mainCamera.transform.Translate( -speed * Time.deltaTime, 0, 0 );
+            
+        }
     }
 
     public void LoadScene( int sceneId )

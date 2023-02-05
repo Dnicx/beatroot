@@ -207,6 +207,7 @@ MonoBehaviour:
   maxHp: 3
   currentHp: 0
   player: {fileID: 0}
+  deathDelaySec: 1
   speedScaler: 1
   speedCurve:
     serializedVersion: 2
