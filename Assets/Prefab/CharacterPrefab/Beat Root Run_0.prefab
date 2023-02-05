@@ -207,7 +207,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2dc79a9bccef4c94ab4ff70db8147eb9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHp: 5
+  maxHp: 10
   currentHp: 0
   WalkSpeed: {x: 10, y: 20}
   attackPos_relative: {x: 0.75, y: 0, z: 0}

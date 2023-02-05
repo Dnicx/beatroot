@@ -673,7 +673,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9faca6076bd692e4a85f14b7a73f12ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHp: 3
+  maxHp: 15
   currentHp: 0
   head: {fileID: 7691547900293906776}
   pawR: {fileID: 7691547900452542949}
@@ -686,7 +686,7 @@ MonoBehaviour:
   attackRadius: 3.01
   attackDelayL: 0.7
   attackDelayR: 0.8
-  attackPower: 2
+  attackPower: 3
   windingSpeed: 1
   attackSpeed: 1
   speedScaler: 1
