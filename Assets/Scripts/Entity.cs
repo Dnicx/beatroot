@@ -10,7 +10,7 @@ public class Entity : MonoBehaviour
     protected int currentHp;
 
     // Start is called before the first frame update
-    void Start()
+    protected void Start()
     {
         currentHp = maxHp;
     }

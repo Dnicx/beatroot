@@ -284,49 +284,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3621498824327626620, guid: 0a755516910f8ad4e882d84a32b78198, type: 3}
-      propertyPath: maxHp
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 3621498824327626620, guid: 0a755516910f8ad4e882d84a32b78198, type: 3}
-      propertyPath: knockBackScaler
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3621498824327626620, guid: 0a755516910f8ad4e882d84a32b78198, type: 3}
-      propertyPath: damageColor.rgba
-      value: 4280292982
-      objectReference: {fileID: 0}
-    - target: {fileID: 3621498824327626620, guid: 0a755516910f8ad4e882d84a32b78198, type: 3}
-      propertyPath: speedCurve.m_Curve.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3621498824327626620, guid: 0a755516910f8ad4e882d84a32b78198, type: 3}
-      propertyPath: speedCurve.m_Curve.Array.data[1].time
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3621498824327626620, guid: 0a755516910f8ad4e882d84a32b78198, type: 3}
-      propertyPath: speedCurve.m_Curve.Array.data[0].value
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3621498824327626620, guid: 0a755516910f8ad4e882d84a32b78198, type: 3}
-      propertyPath: speedCurve.m_Curve.Array.data[1].value
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3621498824327626620, guid: 0a755516910f8ad4e882d84a32b78198, type: 3}
-      propertyPath: speedCurve.m_Curve.Array.data[0].tangentMode
-      value: 34
-      objectReference: {fileID: 0}
-    - target: {fileID: 3621498824327626620, guid: 0a755516910f8ad4e882d84a32b78198, type: 3}
-      propertyPath: speedCurve.m_Curve.Array.data[1].tangentMode
-      value: 34
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3621498824327626608, guid: 0a755516910f8ad4e882d84a32b78198, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1733883031}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0a755516910f8ad4e882d84a32b78198, type: 3}
 --- !u!1 &228332287
 GameObject:
@@ -32557,85 +32518,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Redish
       objectReference: {fileID: 0}
-    - target: {fileID: 3805600928581858778, guid: e8e3a629fe8b5ba4a863a38bfebfda6b, type: 3}
-      propertyPath: maxHp
-      value: 1000
-      objectReference: {fileID: 0}
-    - target: {fileID: 3805600928581858778, guid: e8e3a629fe8b5ba4a863a38bfebfda6b, type: 3}
-      propertyPath: behaviourType
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3805600928581858778, guid: e8e3a629fe8b5ba4a863a38bfebfda6b, type: 3}
-      propertyPath: knockBackScaler
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3805600928581858778, guid: e8e3a629fe8b5ba4a863a38bfebfda6b, type: 3}
-      propertyPath: damageColor.rgba
-      value: 4280292982
-      objectReference: {fileID: 0}
-    - target: {fileID: 3805600928581858778, guid: e8e3a629fe8b5ba4a863a38bfebfda6b, type: 3}
-      propertyPath: speedCurve.m_Curve.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3805600928581858778, guid: e8e3a629fe8b5ba4a863a38bfebfda6b, type: 3}
-      propertyPath: speedCurve.m_Curve.Array.data[1].time
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3805600928581858778, guid: e8e3a629fe8b5ba4a863a38bfebfda6b, type: 3}
-      propertyPath: speedCurve.m_Curve.Array.data[0].value
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3805600928581858778, guid: e8e3a629fe8b5ba4a863a38bfebfda6b, type: 3}
-      propertyPath: speedCurve.m_Curve.Array.data[1].value
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3805600928581858778, guid: e8e3a629fe8b5ba4a863a38bfebfda6b, type: 3}
-      propertyPath: speedCurve.m_Curve.Array.data[0].tangentMode
-      value: 34
-      objectReference: {fileID: 0}
-    - target: {fileID: 3805600928581858778, guid: e8e3a629fe8b5ba4a863a38bfebfda6b, type: 3}
-      propertyPath: speedCurve.m_Curve.Array.data[1].tangentMode
-      value: 34
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3805600928581858774, guid: e8e3a629fe8b5ba4a863a38bfebfda6b, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1540599668}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e8e3a629fe8b5ba4a863a38bfebfda6b, type: 3}
---- !u!1 &1540599662 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3805600928581858774, guid: e8e3a629fe8b5ba4a863a38bfebfda6b, type: 3}
-  m_PrefabInstance: {fileID: 1248936688}
-  m_PrefabAsset: {fileID: 0}
---- !u!143 &1540599668
-CharacterController:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1540599662}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Height: 6.99
-  m_Radius: 0.99
-  m_SlopeLimit: 45
-  m_StepOffset: 0.3
-  m_SkinWidth: 0.08
-  m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1545074222
 GameObject:
   m_ObjectHideFlags: 0
@@ -32749,38 +32636,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   loadingScreen: {fileID: 544422493}
-  Player: {fileID: 0}
---- !u!1 &1733883025 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3621498824327626608, guid: 0a755516910f8ad4e882d84a32b78198, type: 3}
-  m_PrefabInstance: {fileID: 67849877}
-  m_PrefabAsset: {fileID: 0}
---- !u!143 &1733883031
-CharacterController:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1733883025}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Height: 4.73
-  m_Radius: 1.41
-  m_SlopeLimit: 45
-  m_StepOffset: 0.3
-  m_SkinWidth: 0.08
-  m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 0, z: 0}
+  player: {fileID: 0}
+  rightThreshold: 0
+  leftThreshold: 0
 --- !u!1 &1752276284
 GameObject:
   m_ObjectHideFlags: 0
