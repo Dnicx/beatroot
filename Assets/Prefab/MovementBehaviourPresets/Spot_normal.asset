@@ -12,10 +12,40 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1435a134263fc4e739bba8c7689ec173, type: 3}
   m_Name: Spot_normal
   m_EditorClassIdentifier: 
-  maxEnemies: 0
-  bufferTime: 0
-  minRadius: 0
-  maxRadius: 0
-  angleScaler: 0
-  decayRate: 0
-  behaviourType: 0
+  mode: normal
+  maxEnemies: 5
+  bufferTime: 4
+  speedScaler: 1.5
+  minRadius: 4
+  maxRadius: 10
+  angleScaler: 1
+  decayRate: 1
+  behaviourType: 2
+  speedCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 1
+      outSlope: 1
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 1
+      outSlope: 1
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  knockBackScaler: 1
+  damageColor:
+    serializedVersion: 2
+    rgba: 4280292982

@@ -2,6 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+public class EntityTagNames {
+    public static string enemyTag = "Enemy";
+    public static string playerTag = "Player";
+    public static string enemyManagerTag = "EnemyManager";
+}
+
 public class Enemy : Entity
 {
 
@@ -20,7 +26,7 @@ public class Enemy : Entity
     [SerializeField] public GameObject player;
     [SerializeField] private float deathDelaySec = 1.0f;
     [SerializeField] private float speedScaler = 1.0f;
-    [SerializeField] private AnimationCurve speedCurve;
+    [SerializeField] public AnimationCurve speedCurve;
     [SerializeField] private float knockBackScaler = 0.0f;
 
     // Movement bahaviour specific settings
@@ -30,8 +36,8 @@ public class Enemy : Entity
     [SerializeField] private float maxRadius = 12.0f;
     [SerializeField] private float angleScaler = 1.0f;
     [SerializeField] private float decayRate = 0.7f;
-    [SerializeField] private MovementType behaviourType = MovementType.CircleAround;
-    [SerializeField] private Color32 damageColor;
+    [SerializeField] public MovementType behaviourType;
+    [SerializeField] public Color32 damageColor;
     [SerializeField] private float colorFreq = 5.0f;
     [SerializeField] private int colorRound = 3;
     private Color32 startColor;
@@ -59,6 +65,9 @@ public class Enemy : Entity
     void Awake() {
         _renderer = GetComponent<SpriteRenderer>();
         _controller = GetComponent<CharacterController>();
+        if(_controller == null) {
+            _controller = gameObject.AddComponent(typeof(CharacterController)) as CharacterController;
+        }
         endColor = new Color32(255, 255, 255, 255);
         currentHp = maxHp;
         currentState = StateName.Idle;
@@ -67,16 +76,17 @@ public class Enemy : Entity
     // Start is called before the first frame update
     void Start()
     {
+        player = GameObject.FindGameObjectsWithTag(EntityTagNames.playerTag)[0];
         _animator = GetComponent<Animator>();
         lastPos = transform.position;
 
         // GameObject - enemy movement + attack pattern
         switch(behaviourType) {
             case MovementType.CircleAround:
-                m_currentBehaviour = new CircleAround(player, gameObject, speedScaler, speedCurve, minRadius, maxRadius, angleScaler, decayRate);
+                m_currentBehaviour = new CircleAround(player, gameObject, speedScaler, speedCurve, maxEnemies, minRadius, maxRadius, angleScaler, decayRate);
                 break;
             case MovementType.CrawlTarget:
-                m_currentBehaviour = new CrawlTarget(player, gameObject, speedScaler, speedCurve, minRadius);
+                m_currentBehaviour = new CrawlTarget(player, gameObject, speedScaler, speedCurve, maxEnemies, minRadius);
                 break;
             case MovementType.TargetSpotUpdate:
                 m_currentBehaviour = new TargetSpotUpdate(player, gameObject, speedScaler, speedCurve, maxEnemies, minRadius, maxRadius, bufferTime);
@@ -95,8 +105,10 @@ public class Enemy : Entity
 
     public void TakeDamage( int damage )
     {
-        if(_animator.GetCurrentAnimatorStateInfo(0).IsName("TakingDamage")) return;
-
+        if(
+            _animator.GetCurrentAnimatorStateInfo(0).IsName("TakingDamage") ||
+            _animator.GetCurrentAnimatorStateInfo(0).IsName("Death")
+        ) return;
         currentHp -= damage;
         currentHp = (int) Mathf.Max((float) currentHp, 0.0f);
         _animator.SetTrigger( _takeDamage_trigger );
@@ -107,17 +119,19 @@ public class Enemy : Entity
         }
         else
         {
-            StartCoroutine(ChangeEnemyColour());
+            StartCoroutine( ChangeEnemyColour() );
         }
     }
 
     private IEnumerator ChangeEnemyColour() {
         Color32 baseColor = new Color32(255, 255, 255, 255);
-        float tick = 0f;
-        while (tick <= 2.0f * colorRound) {
-            tick += Time.deltaTime * colorFreq;
-            _renderer.color = Color.Lerp(baseColor, damageColor, Mathf.PingPong(tick, 1));
-            Debug.Log(Mathf.PingPong(tick, 1));
+        float tock = 0f;
+        Debug.Log("Enemy Change Color!");
+        while (tock <= 2.0f * colorRound) {
+            tock += Time.deltaTime * colorFreq;
+            _renderer.color = Color.Lerp(baseColor, damageColor, Mathf.PingPong(tock, 1.0f));
+            // Debug.Log(tock.ToString() + " " + Mathf.PingPong(tock, 1.0f).ToString());
+            // Debug.Log(Mathf.PingPong(tock, 1.0f).ToString() + " " + _renderer.color.ToString());
             yield return null;
         }
     }
@@ -187,9 +201,10 @@ public class Enemy : Entity
     IEnumerator DeathCoroutine( float delaySec )
     {
         float tick = 0f;
+        m_currentBehaviour.setIsPaused(true);
         while (tick <= delaySec) {
             tick += Time.deltaTime;
-            Debug.Log(Mathf.PingPong(tick, 1));
+            // Debug.Log(Mathf.PingPong(tick, 1));
             yield return null;
         }
 
