@@ -13,11 +13,13 @@ public class BossScript : Entity
     public GameObject pawRShadow;
     public GameObject pawLShadow;
 
-    public Vector3 headWindingOffset;
-    public Vector3 pawRWindingOffset;
-    public Vector3 pawLWindingOffset;
+    [SerializeField] private Vector3 pawLTarget;
+    [SerializeField] private Vector3 pawRTarget;
+    [SerializeField] private float attackRadius;
 
-    public float attackDelay = 1;
+    public float attackDelayL = 0.2f;
+    public float attackDelayR = 0.2f;
+    public int attackPower = 2;
 
     public float windingSpeed = 1.0f;
     public float attackSpeed = 1.0f;
@@ -39,11 +41,15 @@ public class BossScript : Entity
 
     private string _AttackRight_trigger = "AttackingRight";
     private string _AttackLeft_trigger = "AttackingLeft";
+    private string _damage_message = "TakeDamage";
 
     private GameObject _Player;
 
     private float offsetX = 0f;
     private float offsetZ = 0f;
+
+    private bool playerInBoundsL = false;
+    private bool playerInBoundsR = false;
 
     // Start is called before the first frame update
     void Start()
@@ -84,15 +90,14 @@ public class BossScript : Entity
                 if ( attackRand < attackProb / 2 )
                     AttackLeft();
                 else
-                    AtackRight();
+                    AttackRight();
             }
         }
+
     }
 
     private void FollowPlayer()
     {
-        Debug.Log( "_Player " + _Player.transform.position );
-
         if ( Random.Range( 0f, 1f ) > 0.9 )
         {
             offsetX = Random.Range( -5.0f, 5.0f );
@@ -130,11 +135,6 @@ public class BossScript : Entity
         }
     }
 
-    void followPlayer()
-    {
-
-    }
-
     void AttackLeft()
     {
         // Vector3 attacking = new Vector3( 0, 0, 0);
@@ -143,6 +143,19 @@ public class BossScript : Entity
         isCooledDown = false;
         _animator.SetTrigger( _AttackLeft_trigger );
         StartCoroutine( AttackCooldownCoroutine( cooldownSec ) );
+
+        Vector3 pawLTargetPos = CalAttackPos( pawL, pawLTarget );
+        StartCoroutine( AttackDelayCoroutine( pawLTargetPos, attackPower, attackDelayL, "L" ) );
+    }
+
+    void AttackRight()
+    {
+        isCooledDown = false;
+        _animator.SetTrigger( _AttackRight_trigger );
+        StartCoroutine( AttackCooldownCoroutine( cooldownSec ) );
+
+        Vector3 pawRTargetPos = CalAttackPos( pawR, pawRTarget );
+        StartCoroutine( AttackDelayCoroutine( pawRTargetPos, attackPower, attackDelayR, "R" ) );
     }
 
     IEnumerator AttackLeftCoroutine( GameObject attackingObj, Vector3 offsetPos, Vector3 attackingPos, float attackDelay )
@@ -150,7 +163,7 @@ public class BossScript : Entity
         Debug.Log( "start atttack coroutine");
         // winding
         float tick = 0f;
-        Vector3 targetOffestPos = calWindingPosition( attackingObj.transform.position , offsetPos );
+        Vector3 targetOffestPos = CalAttackPos( attackingObj, offsetPos );
         while (tick <= attackDelay ) {
             tick += Time.deltaTime * windingSpeed;
             Vector3 newPos = Vector3.Lerp( attackingObj.transform.position, targetOffestPos, tick/attackDelay);
@@ -173,12 +186,30 @@ public class BossScript : Entity
         isCooledDown = true;
     }
 
-    void AtackRight()
+    IEnumerator AttackDelayCoroutine( Vector3 targetPos, int pow , float attackDelay, string side )
     {
-        isCooledDown = false;
-        _animator.SetTrigger( _AttackRight_trigger );
-        StartCoroutine( AttackCooldownCoroutine( cooldownSec ) );
+        float tick = 0f;
+        while( tick < attackDelay )
+        {
+            tick += Time.deltaTime;
+            yield return null;
+        }
+
+        // Attack( targetPos, pow, "Player" );
+        if ( side == "L" && playerInBoundsL )
+            _Player.SendMessage( _damage_message, pow );
+        
+        if ( side == "R" && playerInBoundsR )
+            _Player.SendMessage( _damage_message, pow );
     }
+
+    // protected void Attack( int power, string doDamageToTag )
+    // {
+
+    //     if ( playerInBounds )
+    //         _Player.SendMessage( _damage_message, power );
+
+    // }
 
     public void ParentTakeDamage( int damage )
     {
@@ -223,55 +254,53 @@ public class BossScript : Entity
         }
     }
 
-    private Vector3 calWindingPosition( Vector3 currentObjectPos, Vector3 offset )
+    private Vector3 CalAttackPos( GameObject attackingObject, Vector3 offset )
     {
-        return currentObjectPos + offset;
+        return attackingObject.transform.position + offset;
     }
 
-    // protected Vector3 CalAttackPos()
-    // {
-    //     Vector3 globalAttackPos = transform.position;
-    //     globalAttackPos += Vector3.Scale( attackPos_relative,  new Vector3( _facing, 1, 1 ) );
+    public void PlayerInBoundL()
+    {
+        playerInBoundsL = true;
+    }
 
-    //     return globalAttackPos;
-    // }
+    public void PlayerInBoundR()
+    {
+        playerInBoundsR = true;
+    }
 
-    // protected bool Attack( Vector3 attackPos, float attackRadius, int power, string doDamageToTag )
-    // {
-    //     int maxColider = 10;
-    //     Collider[] _hitCollider = new Collider[ maxColider ];
-    //     int _numfound = Physics.OverlapSphereNonAlloc( attackPos, attackRadius, _hitCollider );
-
-    //     int hitCounter = 0;
-    //     for( int i = 0; i < _numfound ; i++ )
-    //     {
-    //         if (_hitCollider[i].gameObject.tag == doDamageToTag)
-    //         {
-    //             hitCounter += 1;
-    //             _hitCollider[i].SendMessage( _damage_message, power );
-    //         }
-            
-    //     }
-
-    //     return hitCounter > 0;
-
-    // }
+    public void PlayerExitBound()
+    {
+        playerInBoundsR = false;
+        playerInBoundsL = false;
+    }
 
 # if UNITY_EDITOR
 
     void OnDrawGizmos()
     {
-        Vector3 WindingPoshead = calWindingPosition( head.transform.position , headWindingOffset );
-        Vector3 WindingPospawR = calWindingPosition( pawR.transform.position , pawRWindingOffset );
-        Vector3 WindingPospawL = calWindingPosition( pawL.transform.position , pawLWindingOffset );
-
-        // Draw a yellow sphere at the transform's position
         Gizmos.color = Color.yellow;
-        Gizmos.DrawWireSphere( WindingPoshead, 2 );
-        Gizmos.DrawWireSphere( WindingPospawR, 2 );
-        Gizmos.DrawWireSphere( WindingPospawL, 2 );
+
+        Vector3 pawLTargetPos = CalAttackPos( pawL, pawLTarget );
+        Vector3 pawRTargetPos = CalAttackPos( pawR, pawRTarget );
+
+        Gizmos.DrawWireSphere( pawLTargetPos, attackRadius );
+        Gizmos.DrawWireSphere( pawRTargetPos, attackRadius );
     }
 
 # endif
+
+    // void OnTriggerStay(Collider Other){
+    //     if( Other.gameObject.tag == "Player"){
+    //         playerInBounds = true;
+    //         Debug.Log( "Player Enter");
+    //     }
+    // }
+    
+    // void OnTriggerExit(Collider Other){
+    //     if( Other.gameObject.tag == "Player"){
+    //         playerInBounds = false;
+    //     }
+    // }
 
 }

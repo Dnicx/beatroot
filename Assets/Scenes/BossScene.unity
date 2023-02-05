@@ -236,6 +236,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1917752151, guid: 312e0e7fb454199458b845f622b0a895, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 7172767928244348532, guid: 312e0e7fb454199458b845f622b0a895, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -280,9 +284,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7172767928244348538, guid: 312e0e7fb454199458b845f622b0a895, type: 3}
+      propertyPath: m_Height
+      value: 3.65
+      objectReference: {fileID: 0}
     - target: {fileID: 7172767928244348815, guid: 312e0e7fb454199458b845f622b0a895, type: 3}
       propertyPath: m_Name
       value: Beat Root Run_0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7172767928244348815, guid: 312e0e7fb454199458b845f622b0a895, type: 3}
+      propertyPath: m_Layer
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -299,7 +311,7 @@ GameObject:
   m_Component:
   - component: {fileID: 356838412}
   - component: {fileID: 356838411}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: shadowH
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -523,6 +535,73 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &993353667
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 993353668}
+  - component: {fileID: 993353669}
+  - component: {fileID: 993353670}
+  m_Layer: 2
+  m_Name: RTrigger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &993353668
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 993353667}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1582974217}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &993353669
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 993353667}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 4.9863806, y: 3.52445, z: 2.948606}
+  m_Center: {x: -4.565699, y: -1.262225, z: 2.1397612}
+--- !u!114 &993353670
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 993353667}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee099b49b8f66db4a87f8e98b31bf0c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  message: PlayerInBoundR
 --- !u!1 &1231043315 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7172767928244348815, guid: 312e0e7fb454199458b845f622b0a895, type: 3}
@@ -615,7 +694,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1359261673}
   - component: {fileID: 1359261672}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: shadowR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -689,6 +768,73 @@ Transform:
   m_Father: {fileID: 1582974217}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!1 &1560869348
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1560869349}
+  - component: {fileID: 1560869350}
+  - component: {fileID: 1560869352}
+  m_Layer: 2
+  m_Name: LTrigger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1560869349
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1560869348}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1582974217}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1560869350
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1560869348}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 4.6233377, y: 3.428771, z: 4.1095376}
+  m_Center: {x: 3.6674938, y: -1.2143855, z: 1.4765866}
+--- !u!114 &1560869352
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1560869348}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee099b49b8f66db4a87f8e98b31bf0c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  message: PlayerInBoundL
 --- !u!1 &1582974216
 GameObject:
   m_ObjectHideFlags: 0
@@ -700,7 +846,9 @@ GameObject:
   - component: {fileID: 1582974217}
   - component: {fileID: 1582974218}
   - component: {fileID: 1582974219}
-  m_Layer: 0
+  - component: {fileID: 1582974221}
+  - component: {fileID: 1582974220}
+  m_Layer: 2
   m_Name: THEBOSS
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -723,6 +871,8 @@ Transform:
   - {fileID: 356838412}
   - {fileID: 1359261673}
   - {fileID: 1823563143}
+  - {fileID: 993353668}
+  - {fileID: 1560869349}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -746,12 +896,15 @@ MonoBehaviour:
   headShadow: {fileID: 356838410}
   pawRShadow: {fileID: 1359261671}
   pawLShadow: {fileID: 1823563141}
-  headWindingOffset: {x: 0, y: 4.68, z: 0}
-  pawRWindingOffset: {x: -0.56, y: 1.91, z: 0}
-  pawLWindingOffset: {x: 1.03, y: 1.8, z: 0}
-  attackDelay: 1
+  pawLTarget: {x: 0, y: 0, z: 0}
+  pawRTarget: {x: 0, y: 0, z: 0}
+  attackRadius: 3.01
+  attackDelayL: 0.7
+  attackDelayR: 0.8
+  attackPower: 2
   windingSpeed: 1
   attackSpeed: 1
+  speedScaler: 1
   cooldownSec: 2
   attackProb: 30
   deathDelaySec: 1
@@ -785,7 +938,49 @@ CharacterController:
   m_StepOffset: 0.3
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 1.69, y: 14.47, z: 0}
+--- !u!65 &1582974220
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1582974216}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 0
+  serializedVersion: 3
+  m_Size: {x: 4.6233377, y: 3.428771, z: 4.1095376}
+  m_Center: {x: 3.6674938, y: -1.2143855, z: 1.4765866}
+--- !u!65 &1582974221
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1582974216}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 0
+  serializedVersion: 3
+  m_Size: {x: 4.9863806, y: 3.52445, z: 2.948606}
+  m_Center: {x: -4.565699, y: -1.262225, z: 2.1397612}
 --- !u!1 &1724273350
 GameObject:
   m_ObjectHideFlags: 0
@@ -798,7 +993,7 @@ GameObject:
   - component: {fileID: 1724273352}
   - component: {fileID: 1724273353}
   - component: {fileID: 1724273354}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Rabbit Hand L
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -891,8 +1086,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.17, y: 1.1, z: 2.5633678}
-  m_Center: {x: 0, y: 0, z: 0.15259361}
+  m_Size: {x: 0.95385945, y: 1.0545865, z: 2.5633678}
+  m_Center: {x: 0.0176422, y: 0.022706687, z: 0.15259361}
 --- !u!114 &1724273354
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -915,7 +1110,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1823563143}
   - component: {fileID: 1823563142}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: shadowL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -999,6 +1194,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1823796389}
   - component: {fileID: 1823796388}
+  - component: {fileID: 1823796390}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -1038,6 +1234,32 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!143 &1823796390
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1823796387}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Height: 2
+  m_Radius: 0.5
+  m_SlopeLimit: 45
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1908849212
 GameObject:
   m_ObjectHideFlags: 0
@@ -12182,7 +12404,7 @@ GameObject:
   - component: {fileID: 1974369247}
   - component: {fileID: 1974369248}
   - component: {fileID: 1974369249}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Rabbit Hand R
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -12333,7 +12555,7 @@ GameObject:
   - component: {fileID: 2133189474}
   - component: {fileID: 2133189476}
   - component: {fileID: 2133189477}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: AnimationTransform
   m_TagString: Enemy
   m_Icon: {fileID: 0}

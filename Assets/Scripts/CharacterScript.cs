@@ -68,7 +68,7 @@ public class CharacterScript : Entity
         int hitCounter = 0;
         for( int i = 0; i < _numfound ; i++ )
         {
-            if (_hitCollider[i].gameObject.tag == doDamageToTag)
+            if ( _hitCollider[i].isTrigger == false && _hitCollider[i].gameObject.tag == doDamageToTag)
             {
                 hitCounter += 1;
                 _hitCollider[i].SendMessage( _damage_message, power );
