@@ -21,6 +21,11 @@ public class EnemyManager : MonoBehaviour {
     private bool hasStageStart = false;
     private bool hasComplete = false;
 
+    public float minX = 15f;
+    public float maxX = 25f;
+    public float minZ = -7f;
+    public float maxZ = 7f;
+
     void Awake() {
         foreach(BehaviourConfig it in behaviourPresets) {
             presetMap[it.getCode()] = it; // Match with BehaviourConfigTypes
@@ -81,14 +86,15 @@ public class EnemyManager : MonoBehaviour {
 
     public List<GameObject> NextStage() {
         int num_enemies = SpawnStageCount[stageCounter];
-        List<GameObject> gameObjects = spawnEnemiesTowardPlayer(num_enemies);
+        List<GameObject> gameObjects = spawnEnemiesTowardPlayer(num_enemies );
         hasStageStart = true;
         return gameObjects;
     }
 
     public List<GameObject> spawnEnemiesTowardPlayer(
-        int n, GameObject player = null, float minX = 15.0f, float maxX = 25.0f, float minZ = -7.0f, float maxZ = 7.0f
-    ) {
+        int n, GameObject player = null
+    ) 
+    {
         List<string> presetKeys = new List<string>(presetMap.Keys);
         List<GameObject> spawnedEnemies = new List<GameObject>();
 

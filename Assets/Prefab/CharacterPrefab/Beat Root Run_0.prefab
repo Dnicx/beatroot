@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1917752152}
   - component: {fileID: 1917752153}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: shadow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -100,7 +100,7 @@ GameObject:
   - component: {fileID: 7172767928244348538}
   - component: {fileID: 1703122699}
   - component: {fileID: 1400626961}
-  m_Layer: 8
+  m_Layer: 2
   m_Name: Beat Root Run_0
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -121,7 +121,7 @@ Transform:
   m_Children:
   - {fileID: 1917752152}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &7172767928244348531
 SpriteRenderer:
@@ -327,7 +327,7 @@ CharacterController:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Height: 4.422119
+  m_Height: 3.65
   m_Radius: 1.33
   m_SlopeLimit: 45
   m_StepOffset: 0.3
