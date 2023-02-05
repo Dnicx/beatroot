@@ -14,19 +14,19 @@ PrefabInstance:
       objectReference: {fileID: -1060712824, guid: 8ffd4618dbbcf7d46bbd267f5ce39976, type: 3}
     - target: {fileID: 3805600928581858773, guid: e8e3a629fe8b5ba4a863a38bfebfda6b, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3805600928581858773, guid: e8e3a629fe8b5ba4a863a38bfebfda6b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.47
+      value: -3.3931322
       objectReference: {fileID: 0}
     - target: {fileID: 3805600928581858773, guid: e8e3a629fe8b5ba4a863a38bfebfda6b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.33
+      value: 2.1501217
       objectReference: {fileID: 0}
     - target: {fileID: 3805600928581858773, guid: e8e3a629fe8b5ba4a863a38bfebfda6b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 7.35
+      value: 10.680004
       objectReference: {fileID: 0}
     - target: {fileID: 3805600928581858773, guid: e8e3a629fe8b5ba4a863a38bfebfda6b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -67,6 +67,10 @@ PrefabInstance:
     - target: {fileID: 3805600928581858778, guid: e8e3a629fe8b5ba4a863a38bfebfda6b, type: 3}
       propertyPath: damageColor.rgba
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3805600928581858778, guid: e8e3a629fe8b5ba4a863a38bfebfda6b, type: 3}
+      propertyPath: attackPos_relative.x
+      value: 1.18
       objectReference: {fileID: 0}
     - target: {fileID: 3805600928581858779, guid: e8e3a629fe8b5ba4a863a38bfebfda6b, type: 3}
       propertyPath: m_Height

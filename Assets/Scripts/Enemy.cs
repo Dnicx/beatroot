@@ -19,8 +19,15 @@ public class Enemy : Entity
     private string _takeDamage_trigger = "takeDamage";
     private string _punch_trigger = "punch01";
     private string _animatorBool_walk = "walk";
+    protected string _damage_message = "TakeDamage";
+
 
     private Vector3 lastPos;
+    private int _facing = -1;
+    public Vector3 attackPos_relative;
+    public float radius;
+
+
 
     // Start is called before the first frame update
     [SerializeField] public GameObject player;
@@ -144,6 +151,36 @@ public class Enemy : Entity
         m_currentBehaviour.setIsPaused(true);
         currentState = StateName.Attack;
         lockState = true;
+
+        bool isHit;
+        isHit = AttackAction( CalAttackPos(), radius, 1, "Player" );
+
+        // if ( isHit )
+        // {
+        //     _audioSrc.clip = kickSfx;
+        //     _audioSrc.Play();
+        // }
+    }
+
+    protected bool AttackAction( Vector3 attackPos, float attackRadius, int power, string doDamageToTag )
+    {
+        int maxColider = 10;
+        Collider[] _hitCollider = new Collider[ maxColider ];
+        int _numfound = Physics.OverlapSphereNonAlloc( attackPos, attackRadius, _hitCollider );
+
+        int hitCounter = 0;
+        for( int i = 0; i < _numfound ; i++ )
+        {
+            if ( _hitCollider[i].isTrigger == false && _hitCollider[i].gameObject.tag == doDamageToTag)
+            {
+                hitCounter += 1;
+                _hitCollider[i].SendMessage( _damage_message, power );
+            }
+            
+        }
+
+        return hitCounter > 0;
+
     }
 
     void Update() {
@@ -196,6 +233,11 @@ public class Enemy : Entity
         _renderer.flipX = player.transform.position.x - transform.position.x > 0;
         lastPos = transform.position;
         lastState = currentState;
+        
+        if ( _renderer.flipX )
+            _facing = 1;
+        else
+            _facing = -1;
     }
 
     IEnumerator DeathCoroutine( float delaySec )
@@ -210,4 +252,25 @@ public class Enemy : Entity
 
         Destroy( gameObject );
     }
+    
+    protected Vector3 CalAttackPos()
+    {
+        Vector3 globalAttackPos = transform.position;
+        globalAttackPos += Vector3.Scale( attackPos_relative,  new Vector3( _facing, 1, 1 ) );
+
+        return globalAttackPos;
+    }
+
+# if UNITY_EDITOR
+
+    void OnDrawGizmos()
+    {
+        Vector3 globalAttackPos = CalAttackPos();
+
+        // Draw a yellow sphere at the transform's position
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawWireSphere( globalAttackPos, radius );
+    }
+
+# endif
 }
