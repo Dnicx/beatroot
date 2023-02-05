@@ -207,13 +207,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2dc79a9bccef4c94ab4ff70db8147eb9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHp: 3
+  maxHp: 5
   currentHp: 0
   WalkSpeed: {x: 10, y: 20}
   attackPos_relative: {x: 0.75, y: 0, z: 0}
   radius: 1.57
   punchSfx: {fileID: 8300000, guid: d4b089d63774ed34d8fb0696f72f1420, type: 3}
   kickSfx: {fileID: 8300000, guid: c5d5f78261f19cd4aa474153c6b1e892, type: 3}
+  healthBar: {fileID: 0}
 --- !u!114 &7172767928244348529
 MonoBehaviour:
   m_ObjectHideFlags: 0

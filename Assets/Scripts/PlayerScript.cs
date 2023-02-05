@@ -33,13 +33,14 @@ public class PlayerScript : CharacterScript
     public AudioClip punchSfx;
     public AudioClip kickSfx;
     public HealthBar healthBar;
+    private int prevHp;
 
     private void Awake()
     {
         base.Awake();
         _playerInput = GetComponent<PlayerInput>();
         healthBar.SetMaxHealth(maxHp);
-        // healthBar.SetHealth(1);
+        prevHp = currentHp;
     }
 
     // Update is called once per frame
@@ -63,6 +64,23 @@ public class PlayerScript : CharacterScript
         {
             Destroy( GetComponent<PlayerInput>() );
         }
+
+        if( prevHp != currentHp ) {
+            healthBar.SetHealth(currentHp);
+        }
+        prevHp = currentHp;
+    }
+
+    public void setHealth(int health) {
+        health = health < 0 ? 0 : health;
+        health = health > maxHp ? maxHp : health;
+        
+        currentHp = health;
+        healthBar.SetHealth(currentHp);
+    }
+
+    public int getHealth() {
+        return currentHp;
     }
 
     public List<float> getEnemiesDistance() {

@@ -60,7 +60,8 @@ public class EnemyManager : MonoBehaviour {
     }
 
     void Update() {
-        enemiesDistance = GameObject.FindGameObjectsWithTag(EntityTagNames.playerTag)[0].GetComponent<PlayerScript>().getEnemiesDistance();
+        PlayerScript player = GameObject.FindGameObjectsWithTag(EntityTagNames.playerTag)[0].GetComponent<PlayerScript>();
+        enemiesDistance = player.getEnemiesDistance();
         if(hasStageStart && enemiesDistance.Count == 0) {
             // Stage Clear
             hasStageStart = false;
@@ -75,6 +76,7 @@ public class EnemyManager : MonoBehaviour {
                 }
             } else {
                 // Assume spawn immediately
+                player.setHealth(player.getHealth() + 3);
                 NextStage();
             }
         }
