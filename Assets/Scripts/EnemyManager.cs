@@ -61,16 +61,16 @@ public class EnemyManager : MonoBehaviour {
             hasStageStart = false;
             stageCounter++;
 
-            // Assume spawn immediately
-            NextStage();
-        }
-
-        if(stageCounter == SpawnStageCount.Length) {
-            // Enemy Spawner ends
-            // Do something, I guess
-            if(!hasComplete) {
-                hasComplete = true;
-                EndGame();
+            if(stageCounter == SpawnStageCount.Length) {
+                // Enemy Spawner ends
+                // Do something, I guess
+                if(!hasComplete) {
+                    hasComplete = true;
+                    EndGame();
+                }
+            } else {
+                // Assume spawn immediately
+                NextStage();
             }
         }
     }
