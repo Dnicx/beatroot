@@ -32,12 +32,14 @@ public class PlayerScript : CharacterScript
     // variable
     public AudioClip punchSfx;
     public AudioClip kickSfx;
-
+    public HealthBar healthBar;
 
     private void Awake()
     {
         base.Awake();
         _playerInput = GetComponent<PlayerInput>();
+        healthBar.SetMaxHealth(maxHp);
+        // healthBar.SetHealth(1);
     }
 
     // Update is called once per frame
