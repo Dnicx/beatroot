@@ -21,6 +21,10 @@ public class BossScript : Entity
 
     public float windingSpeed = 1.0f;
     public float attackSpeed = 1.0f;
+    public float speedScaler = 1.0f;
+    public float cooldownSec = 2.0f;
+    private bool isCooledDown = true;
+    [SerializeField] private float attackProb = 40.0f;
 
     [SerializeField] private float deathDelaySec = 1.0f;
     [SerializeField] private Color32 damageColor;
@@ -31,6 +35,15 @@ public class BossScript : Entity
 
     private List<SpriteRenderer> _renderers = new List<SpriteRenderer>();
     private Animator _animator;
+    private CharacterController _controller;
+
+    private string _AttackRight_trigger = "AttackingRight";
+    private string _AttackLeft_trigger = "AttackingLeft";
+
+    private GameObject _Player;
+
+    private float offsetX = 0f;
+    private float offsetZ = 0f;
 
     // Start is called before the first frame update
     void Start()
@@ -47,6 +60,10 @@ public class BossScript : Entity
         _renderers.Add( pawL.GetComponent<SpriteRenderer>() );
 
         _animator = head.GetComponent<Animator>();
+        _controller = GetComponent<CharacterController>();
+
+        _Player = GameManager.Instance.getPlayer();
+
     }
 
     // Update is called once per frame
@@ -55,6 +72,40 @@ public class BossScript : Entity
         castShadow( head, headShadow );
         castShadow( pawR, pawRShadow );
         castShadow( pawL, pawLShadow );
+
+        if(_animator.GetCurrentAnimatorStateInfo(0).IsName("Idle"))
+            FollowPlayer();
+
+        if( isCooledDown )
+        {
+            float attackRand = Random.Range( 0, 100.0f );
+            if ( attackRand < attackProb )
+            {
+                if ( attackRand < attackProb / 2 )
+                    AttackLeft();
+                else
+                    AtackRight();
+            }
+        }
+    }
+
+    private void FollowPlayer()
+    {
+        Debug.Log( "_Player " + _Player.transform.position );
+
+        if ( Random.Range( 0f, 1f ) > 0.9 )
+        {
+            offsetX = Random.Range( -5.0f, 5.0f );
+            offsetZ = Random.Range( -5.0f, 5.0f );
+        }
+
+        Vector3 target = _Player.transform.position;
+        target.x += offsetX;
+        target.z += offsetZ;
+
+        Vector3 motionVector = (Vector3.Lerp( transform.position, target, speedScaler * Time.deltaTime)) - transform.position;
+        
+        _controller.Move( motionVector );
     }
 
     private void castShadow( GameObject castingObject, GameObject shadow )
@@ -86,9 +137,12 @@ public class BossScript : Entity
 
     void AttackLeft()
     {
-        Vector3 attacking = new Vector3( 0, 0, 0);
-        _animator.SetTrigger( "Attacking" );
-        StartCoroutine( AttackLeftCoroutine( pawL, pawLWindingOffset, attacking, attackDelay ) );
+        // Vector3 attacking = new Vector3( 0, 0, 0);
+        // StartCoroutine( AttackLeftCoroutine( pawL, pawLWindingOffset, attacking, attackDelay ) );
+        
+        isCooledDown = false;
+        _animator.SetTrigger( _AttackLeft_trigger );
+        StartCoroutine( AttackCooldownCoroutine( cooldownSec ) );
     }
 
     IEnumerator AttackLeftCoroutine( GameObject attackingObj, Vector3 offsetPos, Vector3 attackingPos, float attackDelay )
@@ -108,9 +162,22 @@ public class BossScript : Entity
         // attack
     }
 
+    IEnumerator AttackCooldownCoroutine( float cooldownTime )
+    {
+        float tick = 0f;
+        while( tick < cooldownTime )
+        {
+            tick += Time.deltaTime;
+            yield return null;
+        }
+        isCooledDown = true;
+    }
+
     void AtackRight()
     {
-
+        isCooledDown = false;
+        _animator.SetTrigger( _AttackRight_trigger );
+        StartCoroutine( AttackCooldownCoroutine( cooldownSec ) );
     }
 
     public void ParentTakeDamage( int damage )
@@ -160,6 +227,35 @@ public class BossScript : Entity
     {
         return currentObjectPos + offset;
     }
+
+    // protected Vector3 CalAttackPos()
+    // {
+    //     Vector3 globalAttackPos = transform.position;
+    //     globalAttackPos += Vector3.Scale( attackPos_relative,  new Vector3( _facing, 1, 1 ) );
+
+    //     return globalAttackPos;
+    // }
+
+    // protected bool Attack( Vector3 attackPos, float attackRadius, int power, string doDamageToTag )
+    // {
+    //     int maxColider = 10;
+    //     Collider[] _hitCollider = new Collider[ maxColider ];
+    //     int _numfound = Physics.OverlapSphereNonAlloc( attackPos, attackRadius, _hitCollider );
+
+    //     int hitCounter = 0;
+    //     for( int i = 0; i < _numfound ; i++ )
+    //     {
+    //         if (_hitCollider[i].gameObject.tag == doDamageToTag)
+    //         {
+    //             hitCounter += 1;
+    //             _hitCollider[i].SendMessage( _damage_message, power );
+    //         }
+            
+    //     }
+
+    //     return hitCounter > 0;
+
+    // }
 
 # if UNITY_EDITOR
 

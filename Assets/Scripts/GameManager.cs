@@ -13,7 +13,7 @@ public class GameManager : MonoBehaviour
 
     public GameObject player;
 
-    private GameState currentState = GameState.FollowPlayer;
+    [SerializeField] private GameState currentState = GameState.FollowPlayer;
     public float rightThreshold;
     public float leftThreshold;
 
@@ -47,6 +47,12 @@ public class GameManager : MonoBehaviour
 
     private void LateUpdate()
     {
+        if ( currentState == GameState.FollowPlayer )
+            FollowPlayer();
+    }
+
+    private void FollowPlayer()
+    {
         float xDiff = player.transform.position.x - mainCamera.transform.position.x;
 
         float speed = 10.0f;
@@ -79,6 +85,11 @@ public class GameManager : MonoBehaviour
 
             yield return null;
         }
+    }
+
+    public GameObject getPlayer()
+    {
+        return player;
     }
     
 }
