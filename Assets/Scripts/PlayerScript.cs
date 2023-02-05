@@ -56,6 +56,11 @@ public class PlayerScript : CharacterScript
             Vector3 move = new Vector3( walkDirection.x * WalkSpeed.x, 0, walkDirection.y * WalkSpeed.y );
             _controller.Move( move * Time.deltaTime );
         }
+
+        if ( currentHp <= 0 )
+        {
+            Destroy( GetComponent<PlayerInput>() );
+        }
     }
 
     public List<float> getEnemiesDistance() {

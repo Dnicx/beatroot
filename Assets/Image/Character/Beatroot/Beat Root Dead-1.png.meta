@@ -1,0 +1,532 @@
+fileFormatVersion: 2
+guid: 103bb820a44fc5b43a794444fbb2c453
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Beat Root Dead-1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 601
+        width: 928
+        height: 601
+      alignment: 9
+      pivot: {x: 0.466621, y: 0.3453795}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8efc12518a145e419b910b89773c880
+      internalID: -1737491454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat Root Dead-1_1
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 601
+        width: 928
+        height: 601
+      alignment: 9
+      pivot: {x: 0.466621, y: 0.3453795}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ab972cd69dcbcb42a5a417d3e2015dc
+      internalID: 953372322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat Root Dead-1_2
+      rect:
+        serializedVersion: 2
+        x: 1856
+        y: 601
+        width: 928
+        height: 601
+      alignment: 9
+      pivot: {x: 0.466621, y: 0.3453795}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c878288a549ace4d8092c4f4c733380
+      internalID: 1536124635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat Root Dead-1_3
+      rect:
+        serializedVersion: 2
+        x: 2784
+        y: 601
+        width: 928
+        height: 601
+      alignment: 9
+      pivot: {x: 0.466621, y: 0.3453795}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c6df767bed9a1142a9c96fd8399c463
+      internalID: 1039490923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat Root Dead-1_4
+      rect:
+        serializedVersion: 2
+        x: 3712
+        y: 601
+        width: 928
+        height: 601
+      alignment: 9
+      pivot: {x: 0.466621, y: 0.3453795}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 947d72b52b6c811468986839bde6ce4f
+      internalID: 509056610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat Root Dead-1_5
+      rect:
+        serializedVersion: 2
+        x: 4640
+        y: 601
+        width: 928
+        height: 601
+      alignment: 9
+      pivot: {x: 0.466621, y: 0.3453795}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cdb5ce85dde87241ba645f1ed004129
+      internalID: -316753723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat Root Dead-1_6
+      rect:
+        serializedVersion: 2
+        x: 5568
+        y: 601
+        width: 928
+        height: 601
+      alignment: 9
+      pivot: {x: 0.466621, y: 0.3453795}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebd05e759bf4db7428d835d3d4c8faf0
+      internalID: 486438288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat Root Dead-1_7
+      rect:
+        serializedVersion: 2
+        x: 6496
+        y: 601
+        width: 928
+        height: 601
+      alignment: 9
+      pivot: {x: 0.466621, y: 0.3453795}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a1b593919a366948be2282d1c21572f
+      internalID: -1152086103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat Root Dead-1_8
+      rect:
+        serializedVersion: 2
+        x: 7424
+        y: 601
+        width: 928
+        height: 601
+      alignment: 9
+      pivot: {x: 0.466621, y: 0.3453795}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89d38d42d5869d348a666d84e9adc027
+      internalID: -776150037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat Root Dead-1_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 928
+        height: 601
+      alignment: 9
+      pivot: {x: 0.46662113, y: 0.4034112}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28e8147cf450dd84dbca8a484f682572
+      internalID: -2005927160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat Root Dead-1_10
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 0
+        width: 928
+        height: 601
+      alignment: 9
+      pivot: {x: 0.4666211, y: 0.4034112}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9cc0ee7cd9abd647a3eabcd5f4dde7b
+      internalID: 1792881310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat Root Dead-1_11
+      rect:
+        serializedVersion: 2
+        x: 1856
+        y: 0
+        width: 928
+        height: 601
+      alignment: 9
+      pivot: {x: 0.46662113, y: 0.4034112}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07561670aa22942459ad25e3cf1ff7be
+      internalID: -393254041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat Root Dead-1_12
+      rect:
+        serializedVersion: 2
+        x: 2784
+        y: 0
+        width: 928
+        height: 601
+      alignment: 9
+      pivot: {x: 0.466621, y: 0.4034112}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a5bd28b9b141f44f9f3b40ede2ce58a
+      internalID: 1036365746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat Root Dead-1_13
+      rect:
+        serializedVersion: 2
+        x: 3712
+        y: 0
+        width: 928
+        height: 601
+      alignment: 9
+      pivot: {x: 0.466621, y: 0.4034112}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e52424fc2131e64e83833065df815f6
+      internalID: -1671602386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat Root Dead-1_14
+      rect:
+        serializedVersion: 2
+        x: 4640
+        y: 0
+        width: 928
+        height: 601
+      alignment: 9
+      pivot: {x: 0.466621, y: 0.4034112}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95059e433cd9ace459846719692f0e89
+      internalID: -1744401207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat Root Dead-1_15
+      rect:
+        serializedVersion: 2
+        x: 5568
+        y: 0
+        width: 928
+        height: 601
+      alignment: 9
+      pivot: {x: 0.466621, y: 0.4034112}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f417c7fcfedd4514d9f601dbfbc56ee8
+      internalID: 1580324434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat Root Dead-1_16
+      rect:
+        serializedVersion: 2
+        x: 6496
+        y: 0
+        width: 928
+        height: 601
+      alignment: 9
+      pivot: {x: 0.466621, y: 0.4034112}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de5764a5d6086b14babafc974146e490
+      internalID: 1459627943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat Root Dead-1_17
+      rect:
+        serializedVersion: 2
+        x: 7424
+        y: 0
+        width: 928
+        height: 601
+      alignment: 9
+      pivot: {x: 0.466621, y: 0.4034112}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a2f654b39ecd7c4bac5bcea57da1f69
+      internalID: -551549220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Beat Root Dead-1_17: -551549220
+      Beat Root Dead-1_2: 1536124635
+      Beat Root Dead-1_15: 1580324434
+      Beat Root Dead-1_8: -776150037
+      Beat Root Dead-1_5: -316753723
+      Beat Root Dead-1_7: -1152086103
+      Beat Root Dead-1_3: 1039490923
+      Beat Root Dead-1_4: 509056610
+      Beat Root Dead-1_10: 1792881310
+      Beat Root Dead-1_11: -393254041
+      Beat Root Dead-1_16: 1459627943
+      Beat Root Dead-1_13: -1671602386
+      Beat Root Dead-1_0: -1737491454
+      Beat Root Dead-1_14: -1744401207
+      Beat Root Dead-1_9: -2005927160
+      Beat Root Dead-1_1: 953372322
+      Beat Root Dead-1_6: 486438288
+      Beat Root Dead-1_12: 1036365746
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

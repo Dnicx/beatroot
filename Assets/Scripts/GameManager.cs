@@ -19,8 +19,13 @@ public class GameManager : MonoBehaviour
 
     public enum GameState {
         FollowPlayer,
-        Lock
+        Lock,
+        Death,
+        Victory
     };
+
+    public GameState getCurrentState()
+    { return currentState;}
 
     private void Awake()
     {

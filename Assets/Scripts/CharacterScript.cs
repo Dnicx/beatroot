@@ -84,6 +84,13 @@ public class CharacterScript : Entity
     {
         currentHp -= damage;
         _animator.SetTrigger( _takeDamage_trigger );
+        
+        if ( currentHp == 0  ) //&& GameManager.Instance.getCurrentState() != GameManager.GameState.Death
+        {
+            // _animator.SetTrigger( "Death" );
+            _animator.Play("Base Layer.Death", 0, 0 );
+            GameManager.Instance.updateState( GameManager.GameState.Death );
+        }
     }
 
     
