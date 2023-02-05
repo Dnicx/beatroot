@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {   
-
+    public string soundTrackName;
     public static GameManager Instance;
     public GameObject loadingScreen;
 
@@ -31,7 +31,8 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        if( soundTrackName != "" )
+            AudioManager.instance.PlayMusic( soundTrackName );
     }
 
     public void updateState( GameState state )
@@ -47,7 +48,7 @@ public class GameManager : MonoBehaviour
 
     private void LateUpdate()
     {
-        if ( currentState == GameState.FollowPlayer )
+        if ( currentState == GameState.FollowPlayer && player != null )
             FollowPlayer();
     }
 
