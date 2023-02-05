@@ -166,6 +166,7 @@ MonoBehaviour:
   enemiesPrefabs:
   - {fileID: 3621498824327626608, guid: 0a755516910f8ad4e882d84a32b78198, type: 3}
   - {fileID: 3805600928581858774, guid: e8e3a629fe8b5ba4a863a38bfebfda6b, type: 3}
+  SpawnStageCount: 03000000070000000a000000
 --- !u!4 &3860213
 Transform:
   m_ObjectHideFlags: 0
@@ -677,7 +678,7 @@ GameObject:
   - component: {fileID: 1586896085}
   m_Layer: 0
   m_Name: Cube (1)
-  m_TagString: Enemy
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -893,6 +894,10 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: f0687afc-5649-417a-907e-42ba5e6d02f1
     m_ActionName: Player1ActionMap/Kicking1[/Keyboard/k]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 5f83c45e-55d4-4047-b4a0-ba409e304b42
+    m_ActionName: Player1ActionMap/Absorb[/Keyboard/l]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player1ActionMap
