@@ -19,7 +19,7 @@ public class AudioManager : MonoBehaviour
     }
 
     private void Start() {
-        PlayMusic("powerup");
+        // PlayMusic("powerup");
     }
     
     public void PlayMusic(string name) {

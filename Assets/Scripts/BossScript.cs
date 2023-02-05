@@ -94,6 +94,10 @@ public class BossScript : Entity
             }
         }
 
+        if ( _Player == null )
+            _Player = GameManager.Instance.getPlayer();
+
+
     }
 
     private void FollowPlayer()
