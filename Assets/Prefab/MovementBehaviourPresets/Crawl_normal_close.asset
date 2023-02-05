@@ -12,10 +12,40 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1435a134263fc4e739bba8c7689ec173, type: 3}
   m_Name: Crawl_normal_close
   m_EditorClassIdentifier: 
-  maxEnemies: 0
-  bufferTime: 0
-  minRadius: 0
-  maxRadius: 0
-  angleScaler: 0
-  decayRate: 0
-  behaviourType: 0
+  mode: normal_close
+  maxEnemies: 10
+  bufferTime: 3
+  speedScaler: 1
+  minRadius: 3
+  maxRadius: 9
+  angleScaler: 1
+  decayRate: 1
+  behaviourType: 1
+  speedCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  knockBackScaler: 0.5
+  damageColor:
+    serializedVersion: 2
+    rgba: 4280292982

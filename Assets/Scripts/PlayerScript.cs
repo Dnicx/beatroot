@@ -58,6 +58,18 @@ public class PlayerScript : CharacterScript
         }
     }
 
+    public List<float> getEnemiesDistance() {
+        // Get list of all active enemies distance from player (sorted)
+        List<float> allDistances = new List<float>();
+        foreach(GameObject it in GameObject.FindGameObjectsWithTag(EntityTagNames.enemyTag)) {
+            if(it.activeSelf) {
+                allDistances.Add(Vector3.Distance(it.transform.position, transform.position));
+            }
+        }
+        allDistances.Sort((a, b) => a.CompareTo(b));
+        return allDistances;
+    }
+
     public void Walk( InputAction.CallbackContext context )
     {
         Debug.Log( context.ReadValue<Vector2>() );
