@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 787aa0d1acc70dc40bf2c007c38d209c
+guid: c4abf9654c68a764db0c912d267c49f0
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -119,190 +119,274 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Beat Root Punch 01_0
+      name: Beat Root Punch03_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 551
-        height: 647
+        width: 624
+        height: 691
       alignment: 9
-      pivot: {x: 0.3642794, y: 0.4973731}
+      pivot: {x: 0.3156161, y: 0.4629987}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7bfc4cb5c4ef64849966ebb91f58c96a
-      internalID: -972123605
+      spriteID: 1db5746a7e2aef948b005edc3487a20e
+      internalID: 1554442177
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Beat Root Punch 01_1
+      name: Beat Root Punch03_1
       rect:
         serializedVersion: 2
-        x: 551
+        x: 624
         y: 0
-        width: 551
-        height: 647
+        width: 624
+        height: 691
       alignment: 9
-      pivot: {x: 0.3642794, y: 0.4973731}
+      pivot: {x: 0.3156161, y: 0.4629987}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cc639338292f1d44e9679a6c00ef754a
-      internalID: -1840874808
+      spriteID: dc86ce3c290853740b1fb8c50afe4ee0
+      internalID: 160211683
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Beat Root Punch 01_2
+      name: Beat Root Punch03_2
       rect:
         serializedVersion: 2
-        x: 1102
+        x: 1248
         y: 0
-        width: 551
-        height: 647
+        width: 624
+        height: 691
       alignment: 9
-      pivot: {x: 0.3642794, y: 0.4973731}
+      pivot: {x: 0.3156161, y: 0.4629987}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9e68cca3d53dbdd44976957a6359b948
-      internalID: 547337466
+      spriteID: 62241ee8f5e9ff340939c7abfcc38bea
+      internalID: 507803206
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Beat Root Punch 01_3
+      name: Beat Root Punch03_3
       rect:
         serializedVersion: 2
-        x: 1653
+        x: 1872
         y: 0
-        width: 551
-        height: 647
+        width: 624
+        height: 691
       alignment: 9
-      pivot: {x: 0.3642794, y: 0.4973731}
+      pivot: {x: 0.3156161, y: 0.4629987}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 492b5d3b4a487b94a87e6488747c8222
-      internalID: 1585060709
+      spriteID: bf177e9004ca90a419b720695865b988
+      internalID: -701132161
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Beat Root Punch 01_4
+      name: Beat Root Punch03_4
       rect:
         serializedVersion: 2
-        x: 2204
+        x: 2496
         y: 0
-        width: 551
-        height: 647
+        width: 624
+        height: 691
       alignment: 9
-      pivot: {x: 0.3642794, y: 0.4973731}
+      pivot: {x: 0.3156161, y: 0.4629987}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8f3430e814c72274986135a3da68ff28
-      internalID: -1359351503
+      spriteID: 12a1cefeeee548242abe497907d60cf9
+      internalID: 1230795505
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Beat Root Punch 01_5
+      name: Beat Root Punch03_5
       rect:
         serializedVersion: 2
-        x: 2755
+        x: 3120
         y: 0
-        width: 551
-        height: 647
+        width: 624
+        height: 691
       alignment: 9
-      pivot: {x: 0.3642794, y: 0.4973731}
+      pivot: {x: 0.3156161, y: 0.4629987}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b2675f2d4c3e06f4a9064f8efdd31eec
-      internalID: 382823598
+      spriteID: 3ebbbbbca465148408683000dd29f740
+      internalID: -42608248
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Beat Root Punch 01_6
+      name: Beat Root Punch03_6
       rect:
         serializedVersion: 2
-        x: 3306
+        x: 3744
         y: 0
-        width: 551
-        height: 647
+        width: 624
+        height: 691
       alignment: 9
-      pivot: {x: 0.3642794, y: 0.4973731}
+      pivot: {x: 0.3156161, y: 0.4629987}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7f9acfd7fdcbb79419d08407b1fc96e0
-      internalID: 1027240906
+      spriteID: c0ee1c3b42c516b4cb3ef3a663d8add8
+      internalID: -1460644190
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Beat Root Punch 01_7
+      name: Beat Root Punch03_7
       rect:
         serializedVersion: 2
-        x: 3857
+        x: 4368
         y: 0
-        width: 551
-        height: 647
+        width: 624
+        height: 691
       alignment: 9
-      pivot: {x: 0.3642794, y: 0.4973731}
+      pivot: {x: 0.3156161, y: 0.4629987}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 90158a6c87fa4e047af3e81103e27d71
-      internalID: -831895674
+      spriteID: 423e2715e264fb14e8b625392cb9b504
+      internalID: -333375794
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Beat Root Punch 01_8
+      name: Beat Root Punch03_8
       rect:
         serializedVersion: 2
-        x: 4408
+        x: 4992
         y: 0
-        width: 551
-        height: 647
+        width: 624
+        height: 691
       alignment: 9
-      pivot: {x: 0.3642794, y: 0.4973731}
+      pivot: {x: 0.3156161, y: 0.4629987}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a91fbaed20e8d434a8945d817dc20abf
-      internalID: 309732997
+      spriteID: 0ae2845e8da1ae24cb63a26c59b469b4
+      internalID: -612578751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat Root Punch03_9
+      rect:
+        serializedVersion: 2
+        x: 5616
+        y: 0
+        width: 624
+        height: 691
+      alignment: 9
+      pivot: {x: 0.3156161, y: 0.4629987}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c67a0e15bd0c2cf46aaa7dca9eb0aed2
+      internalID: 1258677712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat Root Punch03_10
+      rect:
+        serializedVersion: 2
+        x: 6240
+        y: 0
+        width: 624
+        height: 691
+      alignment: 9
+      pivot: {x: 0.3156161, y: 0.4629987}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bce618521bce2664dae63e0fa2d88222
+      internalID: 960391909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat Root Punch03_11
+      rect:
+        serializedVersion: 2
+        x: 6861
+        y: 0
+        width: 624
+        height: 691
+      alignment: 9
+      pivot: {x: 0.3156161, y: 0.4629987}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4caf5dfc7a5aee54e9368f59e8dcb34d
+      internalID: 1484891931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat Root Punch03_12
+      rect:
+        serializedVersion: 2
+        x: 7488
+        y: 0
+        width: 624
+        height: 691
+      alignment: 9
+      pivot: {x: 0.49815878, y: 0.4441595}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a82374cbcaafae44ca27c91214482ea9
+      internalID: 351109747
       vertices: []
       indices: 
       edges: []
@@ -318,15 +402,19 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Beat Root Punch 01_0: -972123605
-      Beat Root Punch 01_4: -1359351503
-      Beat Root Punch 01_1: -1840874808
-      Beat Root Punch 01_7: -831895674
-      Beat Root Punch 01_3: 1585060709
-      Beat Root Punch 01_6: 1027240906
-      Beat Root Punch 01_8: 309732997
-      Beat Root Punch 01_2: 547337466
-      Beat Root Punch 01_5: 382823598
+      Beat Root Punch03_7: -333375794
+      Beat Root Punch03_5: -42608248
+      Beat Root Punch03_3: -701132161
+      Beat Root Punch03_11: 1484891931
+      Beat Root Punch03_2: 507803206
+      Beat Root Punch03_9: 1258677712
+      Beat Root Punch03_10: 960391909
+      Beat Root Punch03_1: 160211683
+      Beat Root Punch03_8: -612578751
+      Beat Root Punch03_4: 1230795505
+      Beat Root Punch03_12: 351109747
+      Beat Root Punch03_6: -1460644190
+      Beat Root Punch03_0: 1554442177
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
