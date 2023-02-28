@@ -914,10 +914,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Carrot
       objectReference: {fileID: 0}
-    - target: {fileID: 3621498824327626609, guid: 0a755516910f8ad4e882d84a32b78198, type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: 790c0adbd103ad647851d0830ecefd64, type: 2}
     - target: {fileID: 3621498824327626611, guid: 0a755516910f8ad4e882d84a32b78198, type: 3}
       propertyPath: m_RootOrder
       value: 9
@@ -961,10 +957,6 @@ PrefabInstance:
     - target: {fileID: 3621498824327626611, guid: 0a755516910f8ad4e882d84a32b78198, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3621498824327626620, guid: 0a755516910f8ad4e882d84a32b78198, type: 3}
-      propertyPath: maxHp
-      value: 32
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1087,14 +1079,6 @@ PrefabInstance:
     - target: {fileID: 3805600928581858774, guid: e8e3a629fe8b5ba4a863a38bfebfda6b, type: 3}
       propertyPath: m_Name
       value: Redish
-      objectReference: {fileID: 0}
-    - target: {fileID: 3805600928581858778, guid: e8e3a629fe8b5ba4a863a38bfebfda6b, type: 3}
-      propertyPath: maxHp
-      value: 14
-      objectReference: {fileID: 0}
-    - target: {fileID: 3805600928581858778, guid: e8e3a629fe8b5ba4a863a38bfebfda6b, type: 3}
-      propertyPath: colorRound
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

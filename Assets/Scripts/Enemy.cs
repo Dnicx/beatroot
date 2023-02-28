@@ -153,13 +153,21 @@ public class Enemy : Entity
         lockState = true;
 
         bool isHit;
-        isHit = AttackAction( CalAttackPos(), radius, 1, "Player" );
+        // isHit = AttackAction( CalAttackPos(), radius, 1, "Player" );
 
         // if ( isHit )
         // {
         //     _audioSrc.clip = kickSfx;
         //     _audioSrc.Play();
         // }
+    }
+
+    /// <summary>
+    /// This function intend to be called in animation event
+    /// </summay>
+    public void attackAnimation_event()
+    {
+        AttackAction( CalAttackPos(), radius, 1, "Player" );
     }
 
     protected bool AttackAction( Vector3 attackPos, float attackRadius, int power, string doDamageToTag )

@@ -118,7 +118,7 @@ Transform:
   m_Children:
   - {fileID: 6266780018569121181}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &3805600928581858772
 SpriteRenderer:
@@ -204,7 +204,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e454e2dbc893004682a742fb509b764, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHp: 3
+  maxHp: 14
   currentHp: 0
   attackPos_relative: {x: 2.01, y: 0, z: 0}
   radius: 1.81
@@ -229,7 +229,7 @@ MonoBehaviour:
     serializedVersion: 2
     rgba: 0
   colorFreq: 5
-  colorRound: 3
+  colorRound: 1
   distanceEps: 0.005
   currentState: 0
   lastState: 0

@@ -14,19 +14,19 @@ PrefabInstance:
       objectReference: {fileID: -1060712824, guid: 8ffd4618dbbcf7d46bbd267f5ce39976, type: 3}
     - target: {fileID: 3805600928581858773, guid: e8e3a629fe8b5ba4a863a38bfebfda6b, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 3805600928581858773, guid: e8e3a629fe8b5ba4a863a38bfebfda6b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.3931322
+      value: -5.01
       objectReference: {fileID: 0}
     - target: {fileID: 3805600928581858773, guid: e8e3a629fe8b5ba4a863a38bfebfda6b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.1501217
+      value: 2.4
       objectReference: {fileID: 0}
     - target: {fileID: 3805600928581858773, guid: e8e3a629fe8b5ba4a863a38bfebfda6b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 10.680004
+      value: -0.62
       objectReference: {fileID: 0}
     - target: {fileID: 3805600928581858773, guid: e8e3a629fe8b5ba4a863a38bfebfda6b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -58,12 +58,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3805600928581858774, guid: e8e3a629fe8b5ba4a863a38bfebfda6b, type: 3}
       propertyPath: m_Name
-      value: Carrot Variant
+      value: Carrot
       objectReference: {fileID: 0}
     - target: {fileID: 3805600928581858775, guid: e8e3a629fe8b5ba4a863a38bfebfda6b, type: 3}
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 790c0adbd103ad647851d0830ecefd64, type: 2}
+    - target: {fileID: 3805600928581858778, guid: e8e3a629fe8b5ba4a863a38bfebfda6b, type: 3}
+      propertyPath: maxHp
+      value: 32
+      objectReference: {fileID: 0}
     - target: {fileID: 3805600928581858778, guid: e8e3a629fe8b5ba4a863a38bfebfda6b, type: 3}
       propertyPath: damageColor.rgba
       value: 4294967295
