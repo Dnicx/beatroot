@@ -58,7 +58,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3805600928581858774, guid: e8e3a629fe8b5ba4a863a38bfebfda6b, type: 3}
       propertyPath: m_Name
-      value: Carrot
+      value: Carrot Variant
       objectReference: {fileID: 0}
     - target: {fileID: 3805600928581858775, guid: e8e3a629fe8b5ba4a863a38bfebfda6b, type: 3}
       propertyPath: m_Controller
@@ -66,7 +66,7 @@ PrefabInstance:
       objectReference: {fileID: 9100000, guid: 790c0adbd103ad647851d0830ecefd64, type: 2}
     - target: {fileID: 3805600928581858778, guid: e8e3a629fe8b5ba4a863a38bfebfda6b, type: 3}
       propertyPath: maxHp
-      value: 32
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3805600928581858778, guid: e8e3a629fe8b5ba4a863a38bfebfda6b, type: 3}
       propertyPath: radius
