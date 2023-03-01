@@ -206,8 +206,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHp: 14
   currentHp: 0
-  attackPos_relative: {x: 2.01, y: 0, z: 0}
-  radius: 1.81
+  attackPos_relative: {x: 2.92, y: -1.18, z: 0}
+  radius: 2.11
   player: {fileID: 0}
   deathDelaySec: 1
   speedScaler: 1

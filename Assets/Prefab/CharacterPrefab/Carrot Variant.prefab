@@ -69,12 +69,20 @@ PrefabInstance:
       value: 32
       objectReference: {fileID: 0}
     - target: {fileID: 3805600928581858778, guid: e8e3a629fe8b5ba4a863a38bfebfda6b, type: 3}
+      propertyPath: radius
+      value: 1.56
+      objectReference: {fileID: 0}
+    - target: {fileID: 3805600928581858778, guid: e8e3a629fe8b5ba4a863a38bfebfda6b, type: 3}
       propertyPath: damageColor.rgba
       value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 3805600928581858778, guid: e8e3a629fe8b5ba4a863a38bfebfda6b, type: 3}
       propertyPath: attackPos_relative.x
-      value: 1.18
+      value: 0.68
+      objectReference: {fileID: 0}
+    - target: {fileID: 3805600928581858778, guid: e8e3a629fe8b5ba4a863a38bfebfda6b, type: 3}
+      propertyPath: attackPos_relative.y
+      value: -0.13
       objectReference: {fileID: 0}
     - target: {fileID: 3805600928581858779, guid: e8e3a629fe8b5ba4a863a38bfebfda6b, type: 3}
       propertyPath: m_Height

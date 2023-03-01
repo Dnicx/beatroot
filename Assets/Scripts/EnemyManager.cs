@@ -34,7 +34,8 @@ public class EnemyManager : MonoBehaviour {
 
     GameObject getRandomEnemy(Vector3 position, string bPresetName) {
         int randomEnemyPrefabIdx = Random.Range(0, enemiesPrefabs.Length);
-        GameObject spawnEnemy = Instantiate(enemiesPrefabs[randomEnemyPrefabIdx], position, Quaternion.identity);
+        GameObject spawnEnemy = Instantiate(enemiesPrefabs[randomEnemyPrefabIdx] );
+        spawnEnemy.transform.position = new Vector3( position.x, spawnEnemy.transform.position.y, position.z );
         BehaviourConfig bConfig = presetMap[bPresetName];
         Enemy spawnEnemyEntity = spawnEnemy.GetComponent<Enemy>();
         spawnEnemyEntity.currentBehaviour = bConfig.getMovementBehaviour(
